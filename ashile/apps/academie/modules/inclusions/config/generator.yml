@@ -1,0 +1,24 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           inclusion
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          inclusion
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+       classe: {label: "Classe"}
+      list:    
+       title: <h2>Classe dinclusion</h2><br>elles peuvent être définies pour chaque scolarité de l'élève
+       display: [classe]
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

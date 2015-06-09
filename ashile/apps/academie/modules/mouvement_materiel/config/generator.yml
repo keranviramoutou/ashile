@@ -1,0 +1,26 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           MouvementMateriel
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          mouvement_materiel
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title: Liste des mouvements matériel
+        display: [Materiel, Mouvement]
+      filter:
+        display: [materiel_id, mouvement_id]      
+      form:    ~
+      edit:
+        title: Edition des mouvements matériel
+      new:
+        title: Création des mouvements matériel

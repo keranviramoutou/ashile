@@ -1,0 +1,1 @@
+<p> le message doit être enregistré ,avant de pouvoir l'envoyer par Mail </p>

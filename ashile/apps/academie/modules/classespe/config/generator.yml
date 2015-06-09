@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           classespe
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          classespe
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        libelle_classe_spe: {label: "Libellé"}
+      list:
+        title: <h2>Classes en milieu spécialisé</h2><br>elles sont utilisées pour définir les scolarités externe <br>
+ 
+      filter:
+        class: false
+      form:    ~
+      edit:
+        title: Edition des classes en milieu spécialisé
+      new:
+        title: Création des classes en milieu spécialisé

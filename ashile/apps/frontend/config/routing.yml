@@ -1,0 +1,124 @@
+etabnonsco:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                etabnonsco
+    module:               etabnonsco
+    prefix_path:          /etabnonsco
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+test:
+ajax_reponse:
+  url:   /dgesco/reponse
+  param: { module: dgesco, action: ajaxReponse }
+
+ajax_classe:
+  url:   /orientation/classe
+  param: { module: orientation, action: ajaxClasse }
+
+ajax_reunion:
+  url:   /reunion/type
+  param: { module: reunion, action: ajaxClasse }  
+
+ajax_niveau:
+  url:   /orientation/niveau
+  param: { module: orientation, action: ajaxNiveau }
+
+  
+ajax_commune:
+ url:   /eleve/commune
+ param: { module: eleve, action: getCommune }  
+
+ajax_section:
+  url: /ajax_section
+  param: { module: orientation, action: ajaxSection }
+
+sf_guard_signin:
+  url:   /login
+  param: { module: sfGuardAuth, action: signin }
+
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+
+sf_guard_password:
+  url:   /request_password
+  param: { module: sfGuardAuth, action: password }
+
+eleve_pagination:
+  url:    /eleve/page/:page
+  class:  sfDoctrineRoute
+  options: { model: Eleve, type: list }
+  param:  { module: eleve, action: index }
+  requirements:
+    page: \d+
+    sf_method: [get]
+
+transport_obtenu:
+  url: /transport_obtenu
+  param: { module: transportobtenu, action: indexs}
+
+
+specialiste:
+  url: /specialiste
+  param: { module: specialiste, action: new }
+  
+alertes:
+  url: /alertes  
+  param: { module: alertes, action: index }
+ 
+organisme_suivit:
+  url: /organisme_suivit
+  param: { module: organismesuivit, action: new }  
+  
+dossiersIncomplets:
+  url: /dossiers_incomplets
+  param: { module: dossiersIncomplets, action: index }
+  
+horsClisUlis:
+  url: /hors_clis_ulis
+  param: { module: horsClisUlis, action: index }
+  
+ulisClis:
+  url: /ulis_clis
+  param: { module: ulisClis, action: index }  
+  
+ 
+horsClisUlisPdf:
+  url: /hors_clis_ulis_pdf
+  param: { module: horsClisUlis, action: pdf }
+  
+horsClisUlisExcel:
+  url: /hors_clis_ulis_excel
+  param: { module: horsClisUlis, action: excel }      
+  
+eleve_search:
+  url:   /recherche
+  param: { module: eleve, action: search }
+
+eleve:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Eleve
+    module:               eleve
+    prefix_path:          /eleve
+    column:               id
+    with_wildcard_routes: true
+
+
+# default rules
+homepage:
+  url:   /
+  param: { module: eleve, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+#default_index:
+#  url:   /:module
+#  param: { action: index }
+
+default:
+  url:   /:module/:action/*

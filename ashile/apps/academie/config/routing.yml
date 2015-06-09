@@ -1,0 +1,840 @@
+classeext:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                classeext
+    module:               classeext
+    prefix_path:          /classeext
+    column:               id
+    with_wildcard_routes: true
+
+naturebilan:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                naturebilan
+    module:               naturebilan
+    prefix_path:          /naturebilan
+    column:               id
+    with_wildcard_routes: true
+
+rased:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                rased
+    module:               rased
+    prefix_path:          /rased
+    column:               id
+    with_wildcard_routes: true
+
+niveauscolairespe:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                niveauscolairespe
+    module:               niveauscolairespe
+    prefix_path:          /niveauscolairespe
+    column:               id
+    with_wildcard_routes: true
+
+typeetablissementnonsco:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typeetablissementnonsco
+    module:               typeetablissementnonsco
+    prefix_path:          /typeetablissementnonsco
+    column:               id
+    with_wildcard_routes: true
+
+inclusion:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                inclusion
+    module:               inclusions
+    prefix_path:          /inclusions
+    column:               id
+    with_wildcard_routes: true
+
+secteur_secteurs:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Secteur
+    module:               secteurs
+    prefix_path:          /secteurs
+    column:               id
+    with_wildcard_routes: true
+
+conditionsuspensive:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                conditionsuspensive
+    module:               conditionsuspensive
+    prefix_path:          /conditionsuspensive
+    column:               id
+    with_wildcard_routes: true
+
+typesessad:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typesessad
+    module:               typesessad
+    prefix_path:          /typesessad
+    column:               id
+    with_wildcard_routes: true
+
+traitement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                traitement
+    module:               traitement
+    prefix_path:          /traitement
+    column:               id
+    with_wildcard_routes: true
+
+catmateriel:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                catmateriel
+    module:               catmateriel
+    prefix_path:          /catmateriel
+    column:               id
+    with_wildcard_routes: true
+
+mdph:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                mdph
+    module:               mdph
+    prefix_path:          /mdph
+    column:               id
+    with_wildcard_routes: true
+
+typecontratavs:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typecontratavs
+    module:               typecontratavs
+    prefix_path:          /typecontratavs
+    column:               id
+    with_wildcard_routes: true
+    
+ajax_classe:
+  url:   /orientation/classe
+  param: { module: orientation, action: ajaxClasse }
+  
+ajax_niveau:
+  url:   /orientation/niveau
+  param: { module: orientation, action: ajaxNiveau }
+
+  
+
+ajax_reponse:
+  url:   /dgesco/reponse
+  param: { module: dgesco, action: ajaxReponse }
+   
+ 
+ajax_section:
+  url: /ajax_section
+  param: { module: orientation, action: ajaxSection }
+
+ 
+ajax_materiel:
+  url: /ajax_materiel
+  param: { module: eleve_materiel, action: ajaxMateriel }
+
+   
+mouvementmateriel:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                mouvementmateriel
+    module:               mouvementmateriel
+    prefix_path:          /mouvementmateriel
+    column:               id
+    with_wildcard_routes: true
+
+
+dgesco:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                dgesco
+    module:               dgesco
+    prefix_path:          /dgesco
+    column:               id
+    with_wildcard_routes: true
+
+orientation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                orientation
+    module:               orientation
+    prefix_path:          /orientation
+    column:               id
+    with_wildcard_routes: true
+
+
+aide01:
+  url: /accueil/aide
+  param : {module: accueil, action: aide}
+
+reponse:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                reponse
+    module:               reponse
+    prefix_path:          /reponse
+    column:               id
+    with_wildcard_routes: true
+
+question:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                question
+    module:               question
+    prefix_path:          /question
+    column:               id
+    with_wildcard_routes: true
+
+type_position_avs:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typePositionAvs
+    module:               type_position_avs
+    prefix_path:          /type_position_avs
+    column:               id
+    with_wildcard_routes: true
+
+type_contrat_avs:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typeContratAvs
+    module:               type_contrat_avs
+    prefix_path:          /type_contrat_avs
+    column:               id
+    with_wildcard_routes: true
+
+ajax_avs:
+  url:   /eleve_avs/ajaxAvs
+  param: { module: eleve_avs, action: ajaxAvs }
+  
+contrat_avs-dyn:
+  url: /eleve_avs/contratAvs
+  param: { module: eleve_avs, action: contratAvs}
+ 
+ajax_position:
+  url: /contrat_avs/ajaxPosition
+  param: { module: contrat_avs, action: ajaxPosition }
+  
+ajax_mns:
+  url: /modnonsco/ajaxMns
+  param: { module: modnonsco, action: ajaxMns}  
+  
+  
+traitementcda:
+  url: /demandematerielcda
+  param: { module: demandemateriel, action: traitementcda}  
+  
+  
+transportobtenu:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                transportobtenu
+    module:               transportobtenu
+    prefix_path:          /transportobtenu
+    column:               id
+    with_wildcard_routes: true
+
+contrat_avs:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ContratAvs
+    module:               contrat_avs
+    prefix_path:          /contrat_avs
+    column:               id
+    with_wildcard_routes: true
+    
+avs_employe_etabsco:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                AvsEmployeEtabsco
+    module:               avs_employe_etabsco
+    prefix_path:          /avs_employe_etabsco
+    column:               avs_id
+    with_wildcard_routes: true
+
+position_avs:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PositionAvs
+    module:               position_avs
+    prefix_path:          /position_avs
+    column:               id
+    with_wildcard_routes: true
+
+mouvement_materiel:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                MouvementMateriel
+    module:               mouvement_materiel
+    prefix_path:          /mouvement_materiel
+    column:               id
+    with_wildcard_routes: true
+
+personne:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                personne
+    module:               personne
+    prefix_path:          /personne
+    column:               id
+    with_wildcard_routes: true
+
+aideviescolaire:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                aideviescolaire
+    module:               aideviescolaire
+    prefix_path:          /aideviescolaire
+    column:               id
+    with_wildcard_routes: true
+
+enseignant:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                enseignant
+    module:               enseignant
+    prefix_path:          /enseignant
+    column:               id
+    with_wildcard_routes: true
+
+sessad:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sessad
+    module:               sessad
+    prefix_path:          /sessad
+    column:               id
+    with_wildcard_routes: true
+
+livraison:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                livraison
+    module:               livraison
+    prefix_path:          /livraison
+    column:               id
+    with_wildcard_routes: true
+
+detailcommande:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                detailcommande
+    module:               detailcommande
+    prefix_path:          /detailcommande
+    column:               id
+    with_wildcard_routes: true
+
+mouvement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                mouvement
+    module:               mouvement
+    prefix_path:          /mouvement
+    column:               id
+    with_wildcard_routes: true
+
+anneescolaire:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                anneescolaire
+    module:               anneescolaire
+    prefix_path:          /anneescolaire
+    column:               id
+    with_wildcard_routes: true
+
+sfguardusergroup:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfguardusergroup
+    module:               sfguardusergroup
+    prefix_path:          /sfguardusergroup
+    column:               Array
+    with_wildcard_routes: true
+
+secteuretabsco:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                secteuretabsco
+    module:               secteuretabsco
+    prefix_path:          /secteuretabsco
+    column:               etabsco_id
+    with_wildcard_routes: true
+
+qualiteavs:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                qualiteavs
+    module:               qualiteavs
+    prefix_path:          /qualiteavs
+    column:               id
+    with_wildcard_routes: true
+
+commande:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                commande
+    module:               commande
+    prefix_path:          /commande
+    column:               id
+    with_wildcard_routes: true
+
+marque:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                marque
+    module:               marque
+    prefix_path:          /marque
+    column:               id
+    with_wildcard_routes: true
+
+typemateriel:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typemateriel
+    module:               typemateriel
+    prefix_path:          /typemateriel
+    column:               id
+    with_wildcard_routes: true
+
+fournisseur:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                fournisseur
+    module:               fournisseur
+    prefix_path:          /fournisseur
+    column:               id
+    with_wildcard_routes: true
+
+sf_guard_user:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfGuardUser
+    module:               sf_guard_user
+    prefix_path:          /sf_guard_user
+    column:               id
+    with_wildcard_routes: true
+
+classespe:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                classespe
+    module:               classespe
+    prefix_path:          /classespe
+    column:               id
+    with_wildcard_routes: true
+
+etabnonsco:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                etabnonsco
+    module:               etabnonsco
+    prefix_path:          /etabnonsco
+    column:               id
+    with_wildcard_routes: true
+
+classe:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                classe
+    module:               classe
+    prefix_path:          /classe
+    column:               id
+    with_wildcard_routes: true
+
+etabsco:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                etabsco
+    module:               etabsco
+    prefix_path:          /etabsco
+    column:               id
+    with_wildcard_routes: true
+
+secteur:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                secteur
+    module:               secteur
+    prefix_path:          /secteur
+    column:               id
+    with_wildcard_routes: true
+
+circonscription:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                circonscription
+    module:               circonscription
+    prefix_path:          /circonscription
+    column:               id
+    with_wildcard_routes: true
+
+quartier:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                quartier
+    module:               quartier
+    prefix_path:          /quartier
+    column:               id
+    with_wildcard_routes: true
+
+commune:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                commune
+    module:               commune
+    prefix_path:          /commune
+    column:               id
+    with_wildcard_routes: true
+
+transport:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                transport
+    module:               transport
+    prefix_path:          /transport
+    column:               id
+    with_wildcard_routes: true
+
+typeorientation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typeorientation
+    module:               typeorientation
+    prefix_path:          /typeorientation
+    column:               id
+    with_wildcard_routes: true
+
+
+orientation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                orientation
+    module:               orientation
+    prefix_path:          /orientation
+    column:               id
+    with_wildcard_routes: true
+
+
+
+
+typeetablissement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typeetablissement
+    module:               typeetablissement
+    prefix_path:          /typeetablissement
+    column:               id
+    with_wildcard_routes: true
+
+typeresponsableeleve:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typeresponsableeleve
+    module:               typeresponsableeleve
+    prefix_path:          /typeresponsableeleve
+    column:               id
+    with_wildcard_routes: true
+
+trouble:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                trouble
+    module:               trouble
+    prefix_path:          /trouble
+    column:               id
+    with_wildcard_routes: true
+
+specialite:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                specialite
+    module:               specialite
+    prefix_path:          /specialite
+    column:               id
+    with_wildcard_routes: true
+
+niveauscolaire:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                niveauscolaire
+    module:               niveauscolaire
+    prefix_path:          /niveauscolaire
+    column:               id
+    with_wildcard_routes: true
+
+niveaudgesco:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                niveaudgesco
+    module:               niveaudgesco
+    prefix_path:          /niveaudgesco
+    column:               id
+    with_wildcard_routes: true
+
+
+demandeavs:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Demandeavs
+    module:               demandeavs
+    prefix_path:          /demandeavs
+    column:               id
+    with_wildcard_routes: true
+
+suiviDSM:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Demandeavs
+    module:               suiviDSM
+    prefix_path:          /suiviDSM
+    column:               id
+    with_wildcard_routes: true
+
+
+    
+demandemateriel:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Demandemateriel
+    module:               demandemateriel
+    prefix_path:          /demandemateriel
+    column:               id
+    with_wildcard_routes: true    
+
+demandesessad:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Demandesessad
+    module:               demandesessad
+    prefix_path:          /demandesessad
+    column:               id
+    with_wildcard_routes: true
+    
+demandeorientation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Demandeorientation
+    module:               demandeorientation
+    prefix_path:          /demandeorientation
+    column:               id
+    with_wildcard_routes: true
+    
+demandetransport:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Demandetransport
+    module:               demandetransport
+    prefix_path:          /demandetransport
+    column:               id
+    with_wildcard_routes: true        
+
+materiel:
+  class: sfDoctrineRouteCollection
+  options:
+    model:		Materiel
+    module:		materiel
+    prefix_path:	/materiel
+    column:             id
+    with_wildcard_routes: true
+
+
+eleve:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Eleve
+    module:               eleve
+    prefix_path:          /eleve
+    column:               id
+    with_wildcard_routes: true
+
+naturecontratavs:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Naturecontratavs
+    module:               naturecontratavs
+    prefix_path:          /naturecontratavs
+    column:               id
+    with_wildcard_routes: true
+
+avs:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Avs
+    module:               avs
+    prefix_path:          /avs
+    column:               id
+    with_wildcard_routes: true
+
+
+sfguarduser:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfguarduser
+    module:               sfguarduser
+    prefix_path:          /sfguarduser
+    column:               id
+    with_wildcard_routes: true
+
+sfguardgroup:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfguardgroup
+    module:               sfguardgroup
+    prefix_path:          /sfguardgroup
+    column:               id
+    with_wildcard_routes: true
+
+sfguardpermission:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfguardpermission
+    module:               sfguardpermission
+    prefix_path:          /sfguardpermission
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+TextAcceuil:
+  url: /textAccueil
+  param: { module: textAccueil , action: new}
+
+NouvDoss:
+  url: /nouveau_dossiers
+  param: {module: NouvDoss, action: index}
+
+Situation:
+  url: /situation
+  param: {module: situation, action: index}
+
+Nomenclatures_Ash:
+  url: /nomenclaturesAsh
+  param: {module: nomenclatureAsh, action: index}
+
+Nomenclatures_Domaine:
+  url: /nomenclaturesDomaine
+  param: {module: nomenclatureDomaine, action: index}
+
+DossAttMoy:
+  url: /dossiers_en_attente
+  param: {module: DossAttMoy, action: index}
+
+Eleveavs:
+  url: /eleve_avs
+  param: {module: eleve_avs, action: new}
+
+Modnonsco:
+  url: /modnonsco
+  param: {module: modnonsco, action: index} 
+
+Contratavs:
+  url: /contrat_avs
+  param: {module: contrat_avs, action: edit}  
+  
+Sessadobtenu:
+  url: /sessad_obtenu
+  param: { module: sessad_obtenu, action: new}
+  
+Transportobtenu:
+  url: /transport_obtenu
+  param: { module: transport_obtenu, action: new}  
+  
+SessadobtenuIndex:
+  url: /sessad_obtenu_index
+  param: { module: sessad_obtenu, action: index }     
+
+EleveMaj:
+  url: /eleve/miseAjour
+  param: {module: eleve, action: miseAjour}
+  
+EleveAvsIndex:
+  url: /eleve_avs_index
+  param: {module: eleve_avs, action: index}
+  
+EleveAvsSecteur:
+  url: /eleve_avs_secteur
+  param: { module: eleve_avs, action: secteur }  
+
+Elevemateriel:
+  url: /eleve_materiel
+  param: {module: eleve_materiel, action: new}
+
+ElevematerielIndex:
+  url: /eleve_materiel_index
+  param: {module: eleve_materiel, action: index}
+
+DemandeAvs:
+  url: /demandeavs
+  param: { module:demandeavs, action: edit}
+
+AttMoyDemandeAvs:
+  url: /AttMoy_demandeavs
+  param: { module:demandeavs, action: list}
+
+DemandeMateriel:
+  url: /demandemateriel
+  param: { module:demandemateriel, action: edit }
+
+AttMoyDemandeMateriel:
+  url: /AttMoy_demandemateriel
+  param: { module:demandemateriel, action: list}
+ 
+SansConvention:
+  url: /sans_convention
+  param: { module:eleve_materiel, action: conv} 
+  
+DemandeSessad:
+  url: /demandesessad
+  param: { module: demandesessad, action: edit }
+
+AttMoyDemandeSessad:
+  url: /AttMoy_demandesessad
+  param: { module:demandesessad, action: list }
+
+DemandeOrientation:
+  url: /demandeorientation
+  param: { module: demandeorientation, action: edit }
+
+AttMoyDemandeOrientation:
+  url: /AttMoy_demandeorientation
+  param: { module: demandeorientation, action: list}
+  
+DemandeTransport:
+  url: /demandetransport
+  param: { module: demandetransport, action: edit }
+  
+DemandeMateriel:
+  url: /demandemateriel
+  param: { module: demandemateriel, action: index}  
+
+AttMoyDemandeTransport:
+  url: /AttMoy_demandetransport
+  param: { module: demandetransport, action: list}  
+  
+mon-form:
+  url:    /mon-form
+  param:  { module: mail, action: TestForm }  
+
+Accueil:
+  url: /accueil
+  param: { module: accueil, action: index }
+
+# default rules
+homepage:
+  url:   /
+  param: { module: main, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /academie.php/:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

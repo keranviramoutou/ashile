@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           secteur
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          secteur
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        sfguarduser: {label: "Enseignant Référent"}
+        libellesecteur: {label: "Secteur"}
+      list:
+        title: Liste des secteurs
+        display: [libellesecteur, sfguarduser]
+      filter:
+        class: false
+      form:    ~
+      edit:
+        title: Edition d'un secteur
+      new:
+        title: Création d'un secteur

@@ -1,0 +1,14 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+#all:
+
+all:
+  sf_guard_plugin:
+    routes_register: false
+
+            
+# nombre max d'eleves par page index
+  eleve_par_page: 10
+

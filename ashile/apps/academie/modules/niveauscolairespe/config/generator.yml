@@ -1,0 +1,23 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           niveauscolairespe
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          niveauscolairespe
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:   
+          title:  <h2>Niveau scolarité externe</h2>ils sont utilisés pour définir la scolarisation externe des élèves
+      filter:  
+          display: [LibelleNiveauScolaire]
+      form:    ~
+      edit:    ~
+      new:     ~

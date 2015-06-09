@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           classe
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          classe
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: 
+        typeetablissement: {label: "Type établissement"}
+        typeClasse: {label: "Classe"}
+      list:  
+        title: <h2>Classes</h2><br>cette liste permet d'affecter un type de classe en fonction d'un type d'établissement <br>tnomenclature utilisée pour afficher les classes à la création ou la modification d'une scolarité pour un élève.
+        display: [typeetablissement,typeClasse]
+      filter: 
+          display: [typeetablissement_id,typeclasse_id]
+    form:
+        display:
+          Content: [nomtypeetablissement,nomtypeclasse]
+    new:   
+       title: Création des classes 

@@ -1,0 +1,22 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        ash
+    description:  gestion et suivit  des scolarisations de eleves handicapes de la reunion
+    keywords:     ash, enfance, handicap, academie de la reunion
+    language:     fr
+    robots:       index, follow
+
+  stylesheets:    [thickbox.css,radmenu.css, main.css, jquery-ui-1.8.21.custom.css, menu.css, data_table.css, datatable_jui.css, basic.css, basic_ie.css]
+
+
+  javascripts:    [thickbox-compressed.js,radmenu.js, oXHR.js, prototype.js,jquery-1.4.3.min.js,jquery-1.7.2.min.js, jquery-ui-1.8.21.custom.min.js, jquery.ui.datepicker-fr.js, jquery.dataTables.min.js,basic.js,jquery.simplemodal.js,jsProgressBarHandler.js, scriptaculous.js?load=effects, modalbox.js,orientation.js,tuteur.js,modmonsco.js]
+  
+
+  has_layout:     true
+  layout:         layout

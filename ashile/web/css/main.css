@@ -1,0 +1,1194 @@
+body {
+    font-family: Arial, Verdana;
+    font-size: 12px;
+    width: auto;
+    margin: 0;
+}
+
+a.linkTo {
+
+    cursor: pointer;
+    background-color: #ffffff;
+    background-image: url("../images/button_bg.gif");
+
+}
+
+#eleveavs_index1 {
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+#eleveavs_index1 a {
+    display: inline;
+    float:left
+}
+
+a.info{
+position:relative;
+z-index:24;
+color:#000;
+text-decoration:none
+}
+ 
+a.info:hover{
+z-index:25;
+background-color:#FFF
+}
+ 
+a.info span{
+display: none
+}
+ 
+a.info:hover span{
+display:block;
+position:absolute;
+top:2em; left:2em; width:15em;
+border:1px solid #000;
+background-color:#FFF;
+color:#000;
+text-align: justify;
+font-weight:none;
+padding:5px;
+}
+
+/*div qui contient toute la page*/
+#global {
+    position: absolute;
+    width: 95%;
+    #left: 50%;
+    #margin-left: 95%;
+    height: 100%;
+    #background: url("../images/colonne_nav.png") repeat-y;
+    z-index: 20;
+}
+
+/*div qui contient toute la page*/
+#popup {
+     margin: 0 auto;
+     width: 550px;
+	 height: 120px;
+}
+#popup_frontend {
+     margin: 0 auto;
+     width: 550px;
+	 height: 300px;
+}
+
+
+#div_mdph .ui-state-active {
+    background: url("../images/ui-bg_glass_75_e6e6e6_1x400.png") repeat-x !important;
+}
+
+/*div qui contient toute la page
+ * #global_adm {
+    position: absolute;
+    width: 1047px;
+    left: 50%;
+    margin-left: -650px;
+    height: 100%;
+    background: url("../images/colonne_nav_adm.png") repeat-y;
+ * 
+ * */
+ 
+#global_adm {
+    position: absolute;
+    width: 100%;
+    #left: 50%;
+    #margin-left: 95%;
+    height: 100%;
+}
+
+/*div pour la recherche AVS*/
+#recherche_avs{
+    position: relative;
+    left:  10px;
+    top: 10px;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+}
+
+/*div pour les positions d'un contrat*/
+#position_avs{
+    position: relative;
+    left:  10px;
+    top: 10px;
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+}
+
+/*div pour les positions d'un contrat*/
+#position_avs_popup{
+    position: relative;
+    left:  10px;
+    top: 10px;
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+}
+
+#organisme_popup{
+    position: relative;
+    left:  10px;
+    top: 10px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#mouvement_materiel_popup{
+	    position: relative;
+    left:  10px;
+    top: 10px;
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+	background-color:#D8D8D8;
+
+}
+
+
+
+/*div pour la recherche élève*/
+#recherche_eleve{
+    position: relative;
+    left:  5px;
+    top: 5px;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+}
+
+/*div pour la suppression élève et le transfert dosseir MDPH */
+#transfert{
+    position: relative;
+    left:  5px;
+    top: 5px;
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+}
+
+
+#recherche_resultat1{
+    position: relative;
+    left:  5px;
+    top: 5px;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+}
+
+#recherche_resultat{
+    position: relative;
+    left:  5px;
+    top: 5px;
+    width: 95%;
+    height: auto;
+    overflow: hidden;
+}
+
+/*div pour la recherche élève*/
+#recherche_eleve_frontend{
+    position: relative;
+    left:  5px;
+    top: 5px;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+}
+
+/*div pour la recherche élève*/
+#listeEleve{
+    position: relative;
+    left:  5px;
+    top: 5px;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+}
+/*div pour la recherche élève*/
+
+
+#recherche1_secteur{
+    position: relative;
+    left:  5px;
+    top: 5px;
+    width: 75%;
+    height: auto;
+    overflow: hidden;
+}
+
+#recherche2_secteur{
+    position: relative;
+    left:  5px;
+    top: 5px;
+    width: 75%;
+    height: auto;
+    overflow: hidden;
+}
+
+#recherche3_secteur{
+    position: relative;
+    left:  5px;
+    top: 5px;
+    width: 75%;
+    height: auto;
+    overflow: hidden;
+}
+/*div pour la recherche élève*/
+#recherche_materiel{
+    position: relative;
+    left:  5px;
+    top: 5px;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+}
+/*div pour affichage accompagnement élève*/
+#eleve_avs{
+    position: relative;
+    left:  5px;
+    top: 5px;
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+}
+
+/*div pour affichage des matériels attribués à l'élève*/
+#materiel_eleve{
+    position: relative;
+    left:  5px;
+    top: 5px;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+}
+/*div pour affichage la demande matériel*/
+#demande_materiel{
+    position: relative;
+    left:  5px;
+    top: 5px;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+}
+
+#traitement_demande_materiel{
+    position: relative;
+    left:  5px;
+    top: 5px;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+}
+/*div pour affichage accompagnement élève*/
+#eleve_avs_edit{
+    position: relative;
+    left:  5px;
+    top: 5px;
+    width: 85%;
+    height: auto;
+    overflow: hidden;
+}
+
+/*div pour l'affichage des oreintations en cours pour un élève*/
+#orientation{
+    #position: relative;
+    left:  5px;
+    top: 5px;
+    width: 90%;
+    #height: 110%;
+    overflow: hidden;
+}
+/*div pour l'affichage des affcetation de matériels à un élève*/
+#eleve_materiel{
+    position: relative;
+    left:  5px;
+    top: 5px;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+}
+/*div pour l'affichage des demandes avs pour un élève*/
+#demandeavs{
+    position: relative;
+    left:  5px;
+    top: 5px;
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+}
+
+/*div pour la recherche élève*/
+#eleve_secteur{
+    position: relative;
+    left:  5px;
+    top: 5px;
+    width: 75%;
+    height: auto;
+    overflow: hidden;
+}
+
+/*div pour affichage secteur*/
+#secteur{
+    position: relative;
+    left:  5px;
+    top: 5px;
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+}
+
+/*div pour affichage contrat_avs par type*/
+#contrat_avs{
+    position: relative;
+    left:  5px;
+    top: 5px;
+    width: 85%;
+    height: auto;
+    overflow: hidden;
+}
+
+/*div pour affichage demande_avs*/
+#demande_avs{
+    position: relative;
+    left:  5px;
+    top: 0px;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+}
+/* pour les boutons */
+a {
+	margin: 0.5em 0;
+#	width: 100%;
+	color: #444;
+}
+
+
+/*Colonne � gauche*/
+*>#colonne_nav {
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 280px;
+    height: 100%;
+    background: url("../images/colonne_nav.png") repeat-y;
+}
+
+/*Colonne � gauche*/
+*>#colonne_nav_adm {
+	position: fixed;
+    top: 0px;
+    left: 0px;
+	/*width: 280px; */
+    width: 250px;
+    height: 100%;
+	overflow-x:hidden;
+	overflow-y:auto;
+    background: url("../images/colonne_nav_adm.png") repeat-y;
+}
+
+/*Logo academie réunion*/
+#logo {
+    width: 135px;
+    height:162px;
+    position: absolute;
+    margin-left: 55px;
+    margin-top: 10px;
+    background: url(../images/logo-aca-reunion-2015.png) no-repeat;
+    cursor: pointer;
+}
+
+/*Logo academie réunion*/
+#logo_adm {
+    width: 135px;
+    height:162px;
+    position: absolute;
+    margin-left: 55px;
+    margin-top: 10px;
+    background: url(../images/logo-aca-reunion-2015.png) no-repeat;
+    cursor: pointer;
+}
+/*div contenant www.ac-reunion.fr*/
+#www {
+    width: 20px;
+    height: 300px;
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 0px;
+    background: url(../images/wwwacreunion.png) no-repeat;
+    cursor:pointer;
+}
+
+.infoAvs{
+}
+
+.infoMns{
+}
+ 
+.infoPosition{
+} 
+
+.contratAvs{
+  float:right;
+  width:33%;
+  margin-top: 100px;
+  
+}
+
+#sho .tr{}
+
+/*
+#contratAvs{
+	float : right;
+	background : rgb(235, 238, 255);
+    border:1px solid #7c7c77;
+    min-height:200px;
+    -moz-border-radius: 13px;
+    border-radius: 13p;
+}
+*/
+
+#mail {
+    width: 34px;
+    height: 34px;
+	position: relative;
+	margin-left: 0px;
+	margin-top: 20px;
+	background: url(../images/Mail.png) no-repeat;
+	cursor: pointer;
+}
+
+#info {
+    width: 34px;
+    height: 34px;
+	position: relative;
+	margin-left: 50px;
+	margin-top: -34px;
+	background: url(../images/Info.png) no-repeat;
+	cursor: pointer;
+}
+
+.aide {
+    width: 34px;
+    height: 34px;
+    position: relative;
+    margin-left: 80%;
+    margin-top: 2px;
+	background: url(../images/QuestionP.png) no-repeat;
+	vertical-align:top;
+    cursor: pointer;
+}
+
+
+
+.aideMod {
+    width: 110px;
+    height: 110px;
+    position: relative;
+    margin-left: 0px;
+    margin-top: 0px;
+	background: url(../images/QuestionG.png) no-repeat;
+    cursor: pointer;
+}
+
+.excel {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    margin-left: 28%;
+    margin-top: 10%;
+    padding-top: 0px;
+	background: url(../images/pdfLogo.jpg) no-repeat;
+	vertical-align:top;
+    cursor: pointer;
+}
+
+
+.aige_ligne {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    margin-left: 28%;
+    margin-top: 10%;
+    padding-top: 0px;
+	background: url(../images/mini_aide.jpg) no-repeat;
+	vertical-align:top;
+    cursor: pointer;
+}
+
+.sablierr {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 40px;
+        background: url(../images/sablier_rouge.png) no-repeat;
+    cursor: pointer;
+}
+
+.sabliero {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 40px;
+        background: url(../images/sablier_orange.png) no-repeat;
+    cursor: pointer;
+}
+
+
+.sablierv {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 0px;
+        background: url(../images/sablier_vert.png) no-repeat;
+        background-size: contain ;
+    cursor: pointer;
+}
+
+
+
+#menu {
+    padding: 150px 35px;
+}
+
+#menu .accordionButton {
+    width: auto;
+    float: left;
+    border-bottom: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+
+#menu .accordionContent {
+    width: auto;
+    float: left;
+    display: none;
+}
+
+#header {
+    position: absolute;
+    top: 0px;
+    height: 150px;
+    width: 750px;
+    left: 240px;
+}
+/*div de l'image ash-974*/
+#logo_ash {
+    height: 64px;
+    width: 727px;
+    background: url(../images/logoASH.jpg) no-repeat;
+}
+/*div contenant le contenu dynamique*/
+#content {
+    position: relative;
+    left:  245px;
+    top: 20px; /* valeu origine 80 pour afficher en haut logo ash voir layout de frontend div=header et div=logo_ash à activer */
+    width: 75%;
+    height: auto;
+    overflow: hidden;
+    z-index: 0;
+}
+
+/*div accueil*/
+#content_accueil {
+    position: relative;
+    left:  245px;
+    top: 80px; 
+    width: 75%;
+    height: auto;
+    overflow: hidden;
+    z-index: 0;
+}
+
+/*div contenant le contenu dynamique*/
+#content_admin {
+    position: absolute;
+    left:  245px;
+    top: 20px;
+    width: 75%;
+    height: auto;
+    overflow: hidden;
+	margin-left: 5px;
+
+}
+
+/*div contenant le contenu dynamique*/
+#content_backend {
+    position: absolute;
+    left:  245px;
+    top: 210px;
+    width: 1000px;
+    height: auto;
+    overflow: hidden;
+}
+
+.texte_nom {
+    text-transform: uppercase;
+}
+
+/* FORMULAIRE*/
+#content h1 {
+    border-bottom: 1px solid #B0BED9;
+    clear: both;
+    color: #4E6CA3;
+    font-size: 1.3em;
+    font-weight: normal;
+    line-height: 1.6em;
+    margin-top: 2em;
+}
+
+input#search_keywords{
+    width: 150px;
+}
+
+.titreEtab h1 {
+    margin-left: 300px;	 
+}
+
+/* sfGuard*/
+#form_message {
+    display: none;
+    font-weight: bold;
+    color: red;
+}
+
+.tabulaire thead tr th {
+    font-weight: normal;
+    font-size: 13px;
+    color: #fdf8db;
+    background-color: #bcb89f;
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+}
+
+.tabulaireA thead tr th {
+    font-weight: normal;
+    font-size: 13px;
+    color: #fdf8db;
+    background-color: #85add6;
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+}
+
+.tabulaire {
+    width: 100%;
+}
+
+.tabulaire tbody tr td {
+    background-color: #e1e0d6;
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #ffffff;
+    color: #666699;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+}
+
+.tabulaire tbody tr:hover td {
+    background-color: #edece6;
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+}
+
+.flash_notice{
+    margin: 4px 0;
+    padding: 4px 4px 4px 30px;
+    background: url(../images/tick.png) no-repeat 10px 4px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #ffc;
+}
+
+.flash_error{
+    margin: 4px 0;
+    padding: 4px 4px 4px 30px;
+    background: url(../images/error.png) no-repeat 10px 4px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #f33;
+    color: #fff;
+}
+
+form table tbody tr th {
+    font-weight: normal;
+    text-align: left;
+}
+
+form table {
+    border-spacing: 5px 10px;
+}
+
+div#sf_admin_bar {
+    float:none;
+    margin: 0;
+}
+
+#sf_admin_bar .sf_admin_filter form div.bloc_filter {
+    display:inline;
+    padding:0 20px 0 0;
+}
+
+div#sf_admin_container #sf_admin_bar label {
+    display:inline;
+    float:none;
+    padding:0;
+}
+
+#sf_admin_bar .sf_admin_filter {
+    background-color:#FFF;
+    margin:12px 0;
+}
+
+#sf_admin_bar .sf_admin_filter .content_filter {
+    border:1px solid #DDDDDD;
+    padding:5px;
+}
+
+.show tbody tr th {
+    font-weight: normal;
+    text-align: left;
+}
+
+.show tbody tr td {
+    padding-left: 5px;
+    color: #666699;
+}
+
+.tabList {
+    width: 100%;
+}
+
+.tabList thead th {
+    font-size: 14px;
+    font-weight: normal;
+    color: #000000;
+    padding-top: 10px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+    padding-left: 8px
+}
+
+.tabList thead tr  {
+    font-size: 14px;
+    font-weight: normal;
+    color: #666699;
+    padding-top: 10px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+}
+
+.tabList tbody tr td {
+    color: #666699;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+}
+
+.divList {
+    max-height: 100px;
+    overflow: auto;
+}
+
+div#gauche{
+	float: left;
+}
+
+div#droite{
+	float: left;
+	margin-left: 100px;
+}
+
+legend {
+    color: #000066;
+}
+
+input[type="button"], input[type="submit"], a[role="button"], input[type="reset"], button {
+    min-width: 100px;
+}
+
+hr {
+    height: 10px;
+}
+
+.error_list{
+    vertical-align: middle;
+    display: inline;
+}
+.error_list li {
+    list-style: square;
+    color: red;
+    
+    #float: left;
+    
+}
+.errMsg {
+     color: #CC3333;
+     margin-top: -10px;
+}
+
+.form_row_error {
+    border-color: #FFBBBB;
+    border-style: solid;
+    border-width: 1px;
+    padding: 2px;
+}
+/* css pour le menu vertical */
+
+div.tabscontainer{
+    margin:15px 0px;
+}
+
+div.tabscontainer div.tabs{
+    list-style: none;
+    width: 205px;
+    cursor: pointer;
+    float:left;
+    margin-top: 10px;
+    left: 0px;
+    z-index: 2;
+}
+
+div.tabscontainer div.curvedContainer{
+    margin-left: 205px;
+    border:1px solid #7c7c77;
+    min-height:200px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+}
+
+div.tabscontainer div.curvedContainer .tabcontent{
+    display:none;
+    padding:20px;
+    font-size:12px;
+    font-family: "CenturyGothicRegular", "Century Gothic", Arial, Helvetica, sans-serif;
+}
+
+div.tabs div.tab{
+    display: block;
+    height: 38px;
+    background: #eeeeea;
+    border: #d6d6d2 solid 1px;
+    border-top: none;
+    position: relative;
+    color: #73736b;
+}
+
+div.tabs div.link{
+    padding-left: 20px;
+    padding-top:20px;
+    font-family: "CenturyGothicRegular", "Century Gothic", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+div.tabs div.tab.selected{
+    color: #ffffff;
+    border-right-color: #aeaeaa;
+}
+
+div.tabs div.tab.selected{
+    background: url(menuSelBack.png) repeat-x;
+    border-right-color: #7c7c77;
+}
+
+div.tabs div.tab.first{
+    border-top: #dbdbb7 solid 1px;
+    -moz-border-radius-topleft: 13px;
+    border-top-left-radius: 13px;
+}
+
+div.tabs div.tab.last{
+    -moz-border-radius-bottomleft: 13px;
+    border-bottom-left-radius: 13px;
+}
+
+div.tabs div.tab div.arrow{
+    position: absolute;
+    background: url(homeSelArrow.png) no-repeat;
+    height: 58px;
+    width: 17px;
+    left: 100%;
+    top: 0px;
+    display: none;
+}
+
+div.tabs div.tab.selected div.arrow{
+    display: block;
+}
+
+/* css du menu admin */
+.navigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #85add6;
+    color: #fff;
+    width: 200px;
+    font: 1.2em "Trebuchet MS", sans-serif;
+}
+.navigation a, .navigation span {
+    display: block;
+    padding: 4px 10px;
+    color: #fff;
+    text-decoration: none;
+}
+.navigation .toggleSubMenu a, .navigation .toggleSubMenu span {
+    background:#85add6; 
+}
+.navigation .open a, .navigation .open span {
+    background:#fff;
+    color: #557da6;	
+}
+.navigation a:hover, .navigation a:focus, .navigation a:active {
+    background:#fff;
+    color: #85add6;
+}
+.navigation .subMenu {
+    font-size: .8em;
+    background: #ccc ;
+    font-size: .9em;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #666;
+}
+.navigation ul.subMenu a {
+    background: #759cc5;
+    padding: 3px 20px;
+}
+
+.navigation ul.subMenu a:hover {
+    background: #c0d9f3;
+    padding: 3px 20px;
+}
+
+/* css du menu frontend */
+.navigationIndex {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #b1c003;
+    color: #3b4001;
+    width: 200px;
+    font: 1.2em "Trebuchet MS", sans-serif;
+}
+.navigationIndex a, .navigationIndex span {
+    display: block;
+    padding: 4px 10px;
+    color: #3b4001;
+    text-decoration: none;
+}
+.navigationIndex .toggleSubMenu a, .navigationIndex .toggleSubMenu span {
+    background:#b1c003; 
+}
+.navigationIndex .open a, .navigationIndex .open span {
+    background:#d1e023;
+    color: #111;	
+}
+.navigationIndex a:hover, .navigationIndex a:focus, .navigationIndex a:active {
+    background:#d0d6b0;
+    color: #111;
+}
+.navigationIndex .subMenu {
+    font-size: .8em;
+    background: #ccdd03 ;
+    font-size: .9em;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #666;
+}
+.navigationIndex ul.subMenu a {
+    background: #ccdd03;
+    padding: 3px 20px;
+}
+
+.navigationIndex ul.subMenu a:hover {
+    background: #d0d6b0;
+    padding: 3px 20px;
+}    
+
+
+p label {
+	float: left;
+    width: 250px;
+    height: 23px;
+}
+
+.infoField label {
+    display: inline-block;
+}
+
+h4 {
+    text-decoration: underline;
+}
+
+.radio {
+    display: inline-block; 
+    vertical-align: middle;
+    height: 23px;
+    line-height: 23px;
+}
+.radio label {
+    display: block; 
+    float: right;
+    width: auto;
+    vertical-align: middle;
+    top: 0px;
+}
+
+.positionBouton {
+    text-align: right;
+}
+
+.positionBouton a {
+    text-decoration: none;
+}
+
+fieldset {
+    border-radius: 5px;
+    border-style: none;
+    border-color: -moz-use-text-color;border-width: 2px;
+    border-style: solid;
+    padding: 8px;
+    margin-bottom: 1em;
+}
+
+fieldset legend {
+    font-weight: bold;
+}
+
+input[type="text"], textarea {
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+    background-image: url(../images/input_bg.png);
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+    background-position: -2px -2px;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    border-top-style: solid;
+    border-top-color: #acaeb4;
+    border-left-style: solid;
+    border-left-color: #dde1e7;
+    border-right-style: solid;
+    border-right-color: #dde1e7;
+    border-bottom-style: solid;
+    border-bottom-color: #e3e9ef;
+    border-radius: 2px;
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    border-width: 1px;
+}
+
+
+
+input[type="submit"], input[type="reset"], input[type="button"], button {
+    padding-top: 4px;
+    padding-right: 15px;
+    padding-bottom: 4px;
+    padding-left: 15px;
+    cursor: pointer;
+    background-color: #ffffff;
+    background-image: url("../images/button_bg.gif");
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+    background-position: 0% 1em;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    color: #000000;
+    border-top-color: #999999;
+    border-right-color: #999999;
+    border-bottom-color: #555555;
+    border-left-color: #999999;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.error_list {margin: 0; padding: 0;}
+.error, .notice, .success, .error_list li {padding:.8em;margin: 1em 0 0 0;border:2px solid #ddd; list-style: none;}
+.error, .error_list li {background:#FBE3E4;color:#8a1f11;border-color:#FBC2C4; font-size: 11px;}
+.notice {background:#FFF6BF;color:#514721;border-color:#FFD324;}
+.success {background:#E6EFC2;color:#264409;border-color:#C6D880;}
+.error a {color:#8a1f11;}
+.notice a {color:#514721;}
+.success a {color:#264409;}
+
+
+#fade { /*--Masque opaque noir de fond--*/
+	display: none; /*--masqué par défaut--*/
+	background: #000;
+	position: fixed; left: 0; top: 0;
+	width: 100%; height: 100%;
+	opacity: .80;
+	z-index: 9999;
+}
+.popup_block{
+	display: none; /*--masqué par défaut--*/
+	background: #fff;
+	padding: 20px;
+	border: 20px solid #ddd;
+	float: left;
+	font-size: 1.2em;
+	position: fixed;
+	top: 50%; left: 50%;
+	z-index: 99999;
+	/*--Les différentes définitions de Box Shadow en CSS3--*/
+	-webkit-box-shadow: 0px 0px 20px #000;
+	-moz-box-shadow: 0px 0px 20px #000;
+	box-shadow: 0px 0px 20px #000;
+	/*--Coins arrondis en CSS3--*/
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+img.btn_close {
+	float: right;
+	margin: -55px -55px 0 0;
+}
+/*--Gérer la position fixed pour IE6--*/
+*html #fade {
+position: absolute;
+}
+
+*html .popup_block {
+position: absolute;
+}

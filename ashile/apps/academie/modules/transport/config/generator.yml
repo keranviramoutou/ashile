@@ -1,0 +1,25 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           transport
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          transport
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        libelletransport: {label: "Transports"}
+      list:
+        title: Types de transport
+        display: [libelletransport]
+      filter:
+        class: false
+      form:    ~
+      edit:    ~
+      new:     ~

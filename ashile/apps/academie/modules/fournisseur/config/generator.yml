@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           fournisseur
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          fournisseur
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        nomfournisseur: {label: "Fournisseur"}
+        faxfournisseur: {label: "Fax"}
+        telfournisseur: {label: "Tél"}
+        adressefournisseurbat: {label: "Bat"}
+        adressefournisseurrue: {label: "rue"}
+        codepostalfournisseur: {label: "Code postal"}
+        villefournisseur: {label: "Ville"}
+      list:
+        title: Liste des fournisseurs
+        hide: [id]
+      filter:
+        display: [nomfournisseur]
+      form:    ~
+      edit:
+        title: Edition des fournisseurs
+      new:
+        title: Création des fournisseurs

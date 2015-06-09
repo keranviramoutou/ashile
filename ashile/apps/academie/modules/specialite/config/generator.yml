@@ -1,0 +1,26 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           specialite
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          specialite
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        libellespecialite: {label: "Spécialités"}
+      list:
+        title: <h2>Spécialités</h2><br>elles sont utilisées pour définir le domaine d'intervention des partenaires
+        display: [libellespecialite]
+      filter:  ~
+      form:    ~
+      edit:
+        title: Edition d'une spécialité
+      new:
+        title: Création d'une spécialité

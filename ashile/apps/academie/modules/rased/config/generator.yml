@@ -1,0 +1,26 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           rased
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          rased
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: 
+        type_rased: {label: "Type RASED"}
+
+      list:   
+        title: <h2>Type de Rased</h2>il peut être spécifié  dans la scolarisation ordinaire des élèves
+        display: [type_rased] 
+      filter:  
+        display: [type_rased]
+      form:    ~
+      edit:    ~
+      new:     ~

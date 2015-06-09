@@ -1,0 +1,5 @@
+generator:
+  param:
+    config:
+      fields:
+        dateDeciDSM:      { date_format: dd-MM-yyyy }

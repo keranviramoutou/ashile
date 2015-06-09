@@ -1,0 +1,5 @@
+popupSuccess:
+  has_layout: true
+  layout:     layoutpopup
+messageSuccess:
+  has_layout: false

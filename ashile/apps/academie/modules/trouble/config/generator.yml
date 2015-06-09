@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           trouble
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          trouble
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        trouble: {label: "Troubles"} 
+      list:
+        title: Liste des troubles
+        display: [trouble]
+      filter:
+        class: false
+      form:    ~
+      edit:
+        title: Edition d'un trouble
+      new:
+        title: Création d'un trouble

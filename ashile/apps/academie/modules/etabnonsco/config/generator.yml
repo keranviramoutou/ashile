@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           etabnonsco
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          etabnonsco
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        nometabnonsco: {label: "Etablissement spécialisé"}
+        adresseetabnonscobat: {label: "Adresse (bat)"}
+        adresseetabnonscorue: {label: "Adresse (rue)"}
+        typeetablissement_id: {label: "Type établissement"}
+        ordre: {label: "Classement"}
+      list:
+        title: <h2>Etablissements spécialisés</h2>Ils sont utilisés pour définir l'établissement spécialisé  de la scolarité spécialisée d'un élève.<br> Ceux qui sont libéllés sans type (ex IMP,IMPRO)  servent pour affecter les Sessad; ils ne sont pas visibles dans la liste des établissements spécialisés de la scolarité spécialisée.
+        display: [nometabnonsco, quartier,Typeetablissementnonsco, ordre]
+        sort: [ordre, asc]
+      filter:
+        display: [nometabnonsco,quartier_id,typeetablissement_id, ordre]
+      form:    ~
+      edit:
+        title: Edition des etablissements spécialisés
+      new:
+        title: Création des etablissements spécialisés

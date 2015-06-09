@@ -1,0 +1,23 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           classeext
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          classeext
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+            libelle_classe_spe: {label: "Libellé"}
+      list:    
+            title: <h2>Classes externes</h2><br>elles sont utilisées pour définir le type des demande d'orientation du dossier ASH<br>
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

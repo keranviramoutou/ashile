@@ -1,0 +1,4 @@
+stylesheets:    [basic.css, basic_ie.css, demo.css]
+javascripts:    [ jquery-1.6.2.min.js, basic.js, jquery.simplemodal.js]
+aideSuccess:
+  has_layout: false

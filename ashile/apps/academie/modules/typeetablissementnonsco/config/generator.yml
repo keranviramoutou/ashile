@@ -1,0 +1,24 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           typeetablissementnonsco
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          typeetablissementnonsco
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+           nomtypeetablissement: {label: "Famille"}
+      list:    
+          title: <h2>Famille de l'établissement spécialisé</h2><br>ils sont utilisés pour caractériser un établissement spécialisé. <br>Cette nomenclature permet de classer les établissements spécialisés par grande catégorie (famille)<br> le type de l'établissement spécialisé (ex: IMP,IMPRO) est renseigné dans le libellé de l'établissement spécialisé
+      filter:  ~
+      form:    ~
+      edit:    
+         title: <h2>Famille de l'établissement spécialisé</h2><br>ils sont utilisés pour caractériser un établissement spécialisé 
+      new:     ~

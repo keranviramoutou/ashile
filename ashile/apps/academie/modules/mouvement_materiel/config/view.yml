@@ -1,0 +1,12 @@
+
+newSuccess:
+  has_layout: true
+aideSuccess:
+  has_layout: false
+  
+popupSuccess:
+  has_layout: true
+  layout:     layoutpopup
+  
+messageSuccess:
+  has_layout: false

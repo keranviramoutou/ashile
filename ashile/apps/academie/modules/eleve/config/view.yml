@@ -1,0 +1,4 @@
+default:
+  javascripts: [ashile.js]
+aideSuccess:
+  has_layout: false

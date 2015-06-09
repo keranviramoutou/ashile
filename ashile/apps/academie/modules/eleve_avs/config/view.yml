@@ -1,0 +1,13 @@
+aideSuccess:
+  has_layout: false
+
+miseAjourSuccess:
+  has_layout: false
+  
+listposSuccess:
+  has_layout: true
+  layout:     layoutpopup
+  
+list1Success:
+  has_layout: true
+  layout:     layoutpopup

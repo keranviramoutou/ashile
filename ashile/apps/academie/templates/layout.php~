@@ -1,0 +1,110 @@
+<?php
+/**
+ * Le layout de l'application va 'encadrer' les contenus tels que menus, et 
+ * formulaires ect. c'est ici que l'on charge les balises Metas de la page, en 
+ * utilisant les helpers de symfony : 
+ * 
+ *   <?php include_http_metas() ?>
+ *   <?php include_metas() ?>
+ *   <?php include_title() ?>
+ *   <?php include_stylesheets() ?>
+ *   <?php include_javascripts() ?>
+ * 
+ * et l'aspect général de la page.
+ */
+ 
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <?php include_http_metas() ?>
+        <?php include_metas() ?>
+        <?php include_title() ?>
+        <?php include_stylesheets() ?>
+        <?php include_javascripts() ?>
+        <link rel="shortcut icon" href="../../../images/favicon.ico" />
+        
+	<script type="text/javascript">
+		var $j = jQuery.noConflict();
+	</script>
+       
+    </head>
+    <body>
+		
+		
+        <div id="global_adm">
+            <div id="colonne_nav_adm">
+                <div id="www"></div>
+                <div id="logo_adm" onclick="location.href='http://www.ac-reunion.fr'"></div>
+                <div id="menu">
+                    <?php include_partial('menu/index', array('secteurs'=> Doctrine::getTable('Secteur')->findAll())); ?>
+				</div>
+            </div>
+			<!-- récupération de l'année scolaire en cours-->
+			<?php	$annee = Doctrine_Core::getTable('Anneescolaire')->getAnneeScolaireEnCours();
+				$deb = $annee->getDatedebutanneescolaire();
+				$fin = $annee->getDatefinanneescolaire(); ?>
+				
+				
+            <div id="content_admin">
+			
+				 <!-- test pour afficher si sur application en production ou en développement -->
+	             <!-- affichage de l'année scolaire en cours --> 
+			    <?php if ($_SERVER['HTTP_HOST'] == 'ashile2.ac-reunion.fr'): ?>
+					<?php	$message ='<h4> <FONT COLOR="red" >Application de test</FONT></h4>' ?>
+				 <?php else: ?>
+					<?php	$message ='<h4> <FONT COLOR="blue" >Application en production</FONT></h4>' ?>
+				 <?php endif ?>
+
+				 
+				 
+		<!-------------------  BOUTON DECONNECTION ET RETOUR PORTAIL ---------------------------------->
+				<?php if($_SERVER["HTTP_X_FORWARDED_HOST"] == 'accueil.in.ac-reunion.fr' ){ 
+				$retour='https://accueil.in.ac-reunion.fr';
+				} ?>
+
+
+				<?php if($_SERVER["HTTP_X_FORWARDED_HOST"] == 'portail.ac-reunion.fr' ){ 
+				$retour='https://portail.ac-reunion.fr';
+				} ?>
+				
+				<table COLS=3 width=80%>
+				 <tr>
+				 	<?php echo $message; ?>
+				 </td>
+				 <tr>
+				 <tr>
+				 <td width=50%>
+				 <?php echo 'Année scolaire en cours :&nbsp<b>'.substr($deb,0,4).'&nbsp;-&nbsp'.substr($fin,0,4).'</b></FONT></h4>'; ?>
+				 </td>
+				 <td width=30% align=right>
+				 <input style="cursor: pointer;padding:2.75px; float: right; " name="deconnexion" type="button" class="bouton" id="deconnexion" value="d&eacute;connexion" onclick="location.href='/login/ct_logout.jsp'" />
+				</td>
+				<td width=14%>
+				<input style="cursor: pointer;padding:2.75px; float: right" type="button" value="Retour au Portail"  OnClick="location.href= '<?php echo $retour; ?>'" >
+				 </td>
+				 </tr>
+				 </table>
+			
+				
+				
+		<!----------------------------------------------------------------------------------------------->
+                <?php if ($sf_user->hasFlash('notice')): ?>
+                    <div class="flash_notice"><?php echo $sf_user->getFlash('notice') ?></div>
+                <?php endif ?>
+
+                <?php if ($sf_user->hasFlash('error')): ?>
+                    <div class="flash_error"><?php echo $sf_user->getFlash('error') ?></div>
+                <?php endif ?>
+
+
+
+
+
+                <!-- enfin le contenu -->
+                <?php echo $sf_content ?>
+            </div>
+        </div>
+    </body>
+</html>
+

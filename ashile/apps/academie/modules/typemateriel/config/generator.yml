@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           typemateriel
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          typemateriel
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        libelletypemateriel: {label: "Type matériel"}
+      list:
+        title: Liste des types de matériel
+        hide: [id]
+      filter:
+        class: false
+      form:    ~
+      edit:
+        title: Edition des types de matériel
+      new:
+        title: Création des types de matériel

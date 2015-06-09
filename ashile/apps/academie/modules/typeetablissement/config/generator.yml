@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           typeetablissement
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          typeetablissement
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        nomtypeetablissement: {label: "Types d'etablissement"}
+      list:
+        title: Liste des types d'etablissement
+        display: [nomtypeetablissement]        
+      filter:
+        class: false
+      form:    ~
+      edit:
+        title: Edition d'un type d'établissement
+      new:
+        title: Création d'un type d'établissement

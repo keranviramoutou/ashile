@@ -1,0 +1,9 @@
+popupSuccess:
+  has_layout: true
+  layout:     layoutpopup
+  stylesheets: [radmenu.css,./css/main.css, jquery-ui-1.8.21.custom.css, menu.css, data_table.css, datatable_jui.css, basic.css, basic_ie.css]
+  javascripts:    [radmenu.js, oXHR.js, jquery-1.4.3.min.js,jquery-1.7.2.min.js,%SF_PROTOTYPE_WEB_DIR%/jsjquery-ui-1.8.21.custom.min.js,%SF_PROTOTYPE_WEB_DIR%/js/jquery.ui.datepicker-fr.js, jquery.dataTables.min.js,basic.js,jquery.simplemodal.js, prototype.js,jsProgressBarHandler.js,scriptaculous.js?load=effects, modalbox.js]
+
+messageSuccess:
+  has_layout: false
+

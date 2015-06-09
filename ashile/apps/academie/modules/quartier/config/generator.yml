@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           quartier
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          quartier
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        commune_id: {label: "Communes"}
+        nom_quartier: {label: "Quartier"}
+      list:
+        title: <h2>Liste des codes postaux</h2>ils sont utilisés pour les adresses des élèves,des responsables <br>et des différents organismes ou établissments
+        display: [nom_quartier, Commune, code_postal]
+      filter:
+        display: [commune_id,code_postal]
+      form:    ~
+      edit:
+        title: Edition d'un quartier
+      new:
+        title: Création d'un quartier

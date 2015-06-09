@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.7.1" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>sfSslRequirementPlugin</name>
+ <channel>plugins.symfony-project.org</channel>
+ <summary>SSL encryption plugin.</summary>
+ <description>SSL encryption  plugin.</description>
+ <lead>
+  <name>Fabien POTENCIER</name>
+  <user>fabpot</user>
+  <email>fabien.potencier@symfony-project.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-05-20</date>
+ <time>10:05:02</time>
+ <version>
+  <release>2.0.0</release>
+  <api>2.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.symfony-project.com/license">MIT license</license>
+ <notes>-</notes>
+ <contents>
+  <dir name="/">
+   <file md5sum="b258e8c64e84f179ace0a99a742605bd" name="config/config.php" role="data"/>
+   <file md5sum="425b59b47da76376fe90e2e67928ec7c" name="lib/action/sfSslRequirementActionMixin.class.php" role="data"/>
+   <file md5sum="5090f2a4e2f2f01879ad1c426d8ceb87" name="lib/filter/sfSslRequirementFilter.class.php" role="data"/>
+   <file md5sum="64709c1de1fca01d9e3e34bd5760fc09" name="README" role="data"/>
+   <file md5sum="7fa0c72eaf9d9b17fb063901d70df21f" name="LICENSE" role="data"/>
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+   
+  </required>
+ </dependencies>
+ <phprelease/>
+ <changelog/>
+</package>

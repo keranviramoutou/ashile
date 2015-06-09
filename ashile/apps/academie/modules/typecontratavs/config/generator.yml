@@ -1,0 +1,24 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           typecontratavs
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          typecontratavs
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:     
+        title: <h2>Type de contrat</h2> </b>(cette information est utilisée pour caractériser le contrat d'un accompagnant)<p>le champs "Affichage" permet de spécifier les valeurs à affichr dans la liste déroulante
+
+      filter:  
+         display: [affichage]
+      form:    ~
+      edit:    ~
+      new:     ~

@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           circonscription
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          circonscription
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        libelle_circonscription: {label: "Libellé"}
+        num_circonscription: {label: "RNE" }
+      list:
+        title: <h2>Circonscriptions</h2><br>elle regroupe un ensemble d'établissement scoalaire du 1er degré<br>(information présente pour un établissement scolaire)
+        display: [libelle_circonscription, num_circonscription]
+      filter:
+        display: [num_circonscription]
+      form:    ~
+      edit:
+        title: Edition d'une circonscription
+      new:
+        title: Création d'une circonscription

@@ -1,0 +1,4840 @@
+Accueil:
+  connection: doctrine
+  tableName: accueil
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    type:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+Anneescolaire:
+  connection: doctrine
+  tableName: anneescolaire
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    datedebutanneescolaire:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datefinanneescolaire:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Dgesco:
+      local: id
+      foreign: anneescolaire_id
+      type: many
+Avs:
+  connection: doctrine
+  tableName: avs
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    quartier_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    nom:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    prenom:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    nom_nais:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    date_naissance:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    numen:
+      type: string(13)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    commentaire:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    adressebat:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    adresserue:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    tel1:
+      type: string(13)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    tel2:
+      type: string(13)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    email:
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Quartier:
+      local: quartier_id
+      foreign: id
+      type: one
+    ContratAvs:
+      local: id
+      foreign: avs_id
+      type: many
+    EleveAvs:
+      local: id
+      foreign: avs_id
+      type: many
+Bilan:
+  connection: doctrine
+  tableName: bilan
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    specialiste_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    mdph_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    libelle_bilan:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    date_bilan:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    notes:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    naturebilan_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Mdph:
+      local: mdph_id
+      foreign: id
+      type: one
+    Naturebilan:
+      local: naturebilan_id
+      foreign: id
+      type: one
+    Specialiste:
+      local: specialiste_id
+      foreign: id
+      type: one
+Catmateriel:
+  connection: doctrine
+  tableName: catmateriel
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    libellecatmateriel:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    DemandeMateriel:
+      local: id
+      foreign: catmateriel_id
+      type: many
+    Materiel:
+      local: id
+      foreign: catmateriel_id
+      type: many
+Circonscription:
+  connection: doctrine
+  tableName: circonscription
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    num_circonscription:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    libelle_circonscription:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Etabsco:
+      local: id
+      foreign: circonscription_id
+      type: many
+Classe:
+  connection: doctrine
+  tableName: classe
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    typeetablissement_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    typeclasse_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    TypeClasse:
+      local: typeclasse_id
+      foreign: id
+      type: one
+    Typeetablissement:
+      local: typeetablissement_id
+      foreign: id
+      type: one
+    Inclusion:
+      local: id
+      foreign: classe_id
+      type: many
+    Orientation:
+      local: id
+      foreign: classe_id
+      type: many
+Classespe:
+  connection: doctrine
+  tableName: classespe
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    libelle_classe_spe:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    DemandeOrientation:
+      local: id
+      foreign: classespe_id
+      type: many
+    Modnonsco:
+      local: id
+      foreign: classespe_id
+      type: many
+Commande:
+  connection: doctrine
+  tableName: commande
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    fournisseur_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    date_commande:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Fournisseur:
+      local: fournisseur_id
+      foreign: id
+      type: one
+    DetailCommande:
+      local: id
+      foreign: commande_id
+      type: many
+Commune:
+  connection: doctrine
+  tableName: commune
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nom_commune:
+      type: string(70)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Quartier:
+      local: id
+      foreign: commune_id
+      type: many
+Conditionsuspensive:
+  connection: doctrine
+  tableName: conditionsuspensive
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    conditionsuspensive:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    DemandeAvs:
+      local: id
+      foreign: conditionsuspensive_id
+      type: many
+ContratAvs:
+  connection: doctrine
+  tableName: contrat_avs
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    etabsco_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    avs_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    typecontratavs_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    temps_hebdo:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    date_debut_contrat:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    date_fin_contrat:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    date_fin_projete:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    commentaire:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Avs:
+      local: avs_id
+      foreign: id
+      type: one
+    Etabsco:
+      local: etabsco_id
+      foreign: id
+      type: one
+    TypeContratAvs:
+      local: typecontratavs_id
+      foreign: id
+      type: one
+    PositionAvs:
+      local: id
+      foreign: contratavs_id
+      type: many
+DemandeAvs:
+  connection: doctrine
+  tableName: demande_avs
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    mdph_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    naturecontratavs_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    date_demande_avs:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    quotitehorrairenotifie:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datedebutnotif:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datefinnotif:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datedecisioncda:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    decisioncda:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    traite:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    etat:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    notes:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    daterecepdemanderf:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datedemanddsm:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datedecidsm:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datetransdecierf:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    conditionsuspensive_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Conditionsuspensive:
+      local: conditionsuspensive_id
+      foreign: id
+      type: one
+    Mdph:
+      local: mdph_id
+      foreign: id
+      type: one
+    Naturecontratavs:
+      local: naturecontratavs_id
+      foreign: id
+      type: one
+DemandeMateriel:
+  connection: doctrine
+  tableName: demande_materiel
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    mdph_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    typemateriel_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    traitement_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    date_demande_materiel:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datedebutnotif:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datefinnotif:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datedecisioncda:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    decisioncda:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    traite:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    etat:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    notes:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    materiel_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    catmateriel_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Catmateriel:
+      local: catmateriel_id
+      foreign: id
+      type: one
+    Materiel:
+      local: materiel_id
+      foreign: id
+      type: one
+    Mdph:
+      local: mdph_id
+      foreign: id
+      type: one
+    Traitement:
+      local: traitement_id
+      foreign: id
+      type: one
+    Typemateriel:
+      local: typemateriel_id
+      foreign: id
+      type: one
+DemandeOrientation:
+  connection: doctrine
+  tableName: demande_orientation
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    mdph_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    classespe_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    demijournee_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    date_demande_orientation:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datedebutnotif:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datefinnotif:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datedecisioncda:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    decisioncda:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    traite:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    etat:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    notes:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Classespe:
+      local: classespe_id
+      foreign: id
+      type: one
+    Demijournee:
+      local: demijournee_id
+      foreign: id
+      type: one
+    Mdph:
+      local: mdph_id
+      foreign: id
+      type: one
+DemandeSessad:
+  connection: doctrine
+  tableName: demande_sessad
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    mdph_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    typesessad_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    date_demande_sessad:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datedebutnotif:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datefinnotif:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datedecisioncda:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    decisioncda:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    traite:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    etat:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    notes:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Mdph:
+      local: mdph_id
+      foreign: id
+      type: one
+    Typesessad:
+      local: typesessad_id
+      foreign: id
+      type: one
+    SessadObtenu:
+      local: id
+      foreign: demandesessad_id
+      type: many
+DemandeTransport:
+  connection: doctrine
+  tableName: demande_transport
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    transport_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    mdph_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    date_demande_transport:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datedebutnotif:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datefinnotif:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datedecisioncda:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    decisioncda:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    traite:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    etat:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Mdph:
+      local: mdph_id
+      foreign: id
+      type: one
+    Transport:
+      local: transport_id
+      foreign: id
+      type: one
+    Transportobtenu:
+      local: id
+      foreign: demandetransport_id
+      type: many
+Demijournee:
+  connection: doctrine
+  tableName: demijournee
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    libelledemijournee:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    DemandeOrientation:
+      local: id
+      foreign: demijournee_id
+      type: many
+    Modnonsco:
+      local: id
+      foreign: demijournee_id
+      type: many
+    Orientation:
+      local: id
+      foreign: demijournee_id
+      type: many
+DetailCommande:
+  connection: doctrine
+  tableName: detail_commande
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    typemateriel_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    commande_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    specification:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    quantite:
+      type: integer(3)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    datelivraison:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Commande:
+      local: commande_id
+      foreign: id
+      type: one
+    Typemateriel:
+      local: typemateriel_id
+      foreign: id
+      type: one
+Dgesco:
+  connection: doctrine
+  tableName: dgesco
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    eleve_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    anneescolaire_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    question_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    libelle_reponse:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    reponse_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Anneescolaire:
+      local: anneescolaire_id
+      foreign: id
+      type: one
+    Eleve:
+      local: eleve_id
+      foreign: id
+      type: one
+    Question:
+      local: question_id
+      foreign: id
+      type: one
+    Reponse:
+      local: reponse_id
+      foreign: id
+      type: one
+DirecteurEtab:
+  connection: doctrine
+  tableName: directeur_etab
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    quartier_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    nom:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    prenom:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    nom_nais:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    date_naissance:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    numen:
+      type: string(13)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    commentaire:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    adressebat:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    adresserue:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    tel1:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    tel2:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    email:
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Quartier:
+      local: quartier_id
+      foreign: id
+      type: one
+    Etabsco:
+      local: id
+      foreign: directeuretab_id
+      type: many
+Eleve:
+  connection: doctrine
+  tableName: eleve
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    pps_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    quartier_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    secteur_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ine:
+      type: string(11)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    numeromdph:
+      type: string(11)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    nom:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    prenom:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    datenaissance:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    adresseelevebat:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    adresseleverue:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    notes:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    sexe:
+      type: string(1)
+      fixed: true
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    datesortie:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    motif:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    etat_acc:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    etat_mat:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Pps:
+      local: pps_id
+      foreign: id
+      type: one
+    Quartier:
+      local: quartier_id
+      foreign: id
+      type: one
+    Secteur:
+      local: secteur_id
+      foreign: id
+      type: one
+    Dgesco:
+      local: id
+      foreign: eleve_id
+      type: many
+    EleveAvs:
+      local: id
+      foreign: eleve_id
+      type: many
+    EleveMateriel:
+      local: id
+      foreign: eleve_id
+      type: many
+    Mail:
+      local: id
+      foreign: eleve_id
+      type: many
+    Mdph:
+      local: id
+      foreign: eleve_id
+      type: many
+    Modnonsco:
+      local: id
+      foreign: eleve_id
+      type: many
+    Orientation:
+      local: id
+      foreign: eleve_id
+      type: many
+    Reunion:
+      local: id
+      foreign: eleve_id
+      type: many
+    SessadObtenu:
+      local: id
+      foreign: eleve_id
+      type: many
+    SuivitExterne:
+      local: id
+      foreign: eleve_id
+      type: many
+    Transportobtenu:
+      local: id
+      foreign: eleve_id
+      type: many
+    Tuteur:
+      local: id
+      foreign: eleve_id
+      type: many
+EleveAvs:
+  connection: doctrine
+  tableName: eleve_avs
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    eleve_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    avs_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    commentaire:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    quotitehorraireavs:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datedebut:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datefin:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Avs:
+      local: avs_id
+      foreign: id
+      type: one
+    Eleve:
+      local: eleve_id
+      foreign: id
+      type: one
+EleveMateriel:
+  connection: doctrine
+  tableName: eleve_materiel
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    eleve_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    materiel_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    dateconvention:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datedebut:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datefin:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    dateremiseerf:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    dateremiseparent:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    statut:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    autorisationparent:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    numero_convention:
+      type: string(11)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    chemin_conv:
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Eleve:
+      local: eleve_id
+      foreign: id
+      type: one
+    Materiel:
+      local: materiel_id
+      foreign: id
+      type: one
+Enseignant:
+  connection: doctrine
+  tableName: enseignant
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    quartier_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    nom:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    prenom:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    nom_nais:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    date_naissance:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    numen:
+      type: string(13)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    commentaire:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    adressebat:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    adresserue:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    tel1:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    tel2:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    email:
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Quartier:
+      local: quartier_id
+      foreign: id
+      type: one
+    Orientation:
+      local: id
+      foreign: enseignant_id
+      type: many
+Etabnonsco:
+  connection: doctrine
+  tableName: etabnonsco
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    quartier_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    nometabnonsco:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    typeetablissement_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    adresseetabnonscobat:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ordre:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    adresseetabnonscorue:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    teletabnonsco:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    faxetabnonsco:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    emailetabnonsco:
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Quartier:
+      local: quartier_id
+      foreign: id
+      type: one
+    Typeetablissementnonsco:
+      local: typeetablissement_id
+      foreign: id
+      type: one
+    Modnonsco:
+      local: id
+      foreign: etabnonsco_id
+      type: many
+    Sessad:
+      local: id
+      foreign: etabnonsco_id
+      type: many
+Etabsco:
+  connection: doctrine
+  tableName: etabsco
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    quartier_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    typeetablissement_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    circonscription_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    rne:
+      type: string(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    nometabsco:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    degreetabsco:
+      type: string(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    adresseetabscobat:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    adresseetabscorue:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    telephoneetabsco:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    faxetabsco:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    emailetabsco:
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    etabref:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    directeuretab_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    inclusionetab_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Circonscription:
+      local: circonscription_id
+      foreign: id
+      type: one
+    DirecteurEtab:
+      local: directeuretab_id
+      foreign: id
+      type: one
+    EtabscoInclusion:
+      local: inclusionetab_id
+      foreign: id
+      type: one
+    Quartier:
+      local: quartier_id
+      foreign: id
+      type: one
+    Typeetablissement:
+      local: typeetablissement_id
+      foreign: id
+      type: one
+    ContratAvs:
+      local: id
+      foreign: etabsco_id
+      type: many
+    Orientation:
+      local: id
+      foreign: etabsco_id
+      type: many
+    SecteurEtabsco:
+      local: id
+      foreign: etabsco_id
+      type: many
+EtabscoInclusion:
+  connection: doctrine
+  tableName: etabsco_inclusion
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    typeinclusion:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Etabsco:
+      local: id
+      foreign: inclusionetab_id
+      type: many
+Fournisseur:
+  connection: doctrine
+  tableName: fournisseur
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nomfournisseur:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    faxfournisseur:
+      type: string(15)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    telfournisseur:
+      type: string(15)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    adressefournisseurbat:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    adressefournisseurrue:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    codepostalfournisseur:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    villefournisseur:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Commande:
+      local: id
+      foreign: fournisseur_id
+      type: many
+    Materiel:
+      local: id
+      foreign: fournisseur_id
+      type: many
+Inclusion:
+  connection: doctrine
+  tableName: inclusion
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    classe_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    temspclasseintegration:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Classe:
+      local: classe_id
+      foreign: id
+      type: one
+    Orientation:
+      local: id
+      foreign: inclusion_id
+      type: many
+Mail:
+  connection: doctrine
+  tableName: mail
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    eleve_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    sfguarduser_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    date:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    sujet:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    texte:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Eleve:
+      local: eleve_id
+      foreign: id
+      type: one
+Marque:
+  connection: doctrine
+  tableName: marque
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    libellemarque:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Materiel:
+      local: id
+      foreign: marque_id
+      type: many
+Materiel:
+  connection: doctrine
+  tableName: materiel
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    marque_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    typemateriel_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    catmateriel_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    libellemateriel:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    prixachat:
+      type: 'decimal(10, 2)'
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0.00'
+      notnull: false
+      autoincrement: false
+    fournisseur_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    dateachat:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    caracteristiquemateriel:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    numeromateriel:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    commentaire:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Catmateriel:
+      local: catmateriel_id
+      foreign: id
+      type: one
+    Fournisseur:
+      local: fournisseur_id
+      foreign: id
+      type: one
+    Marque:
+      local: marque_id
+      foreign: id
+      type: one
+    Typemateriel:
+      local: typemateriel_id
+      foreign: id
+      type: one
+    DemandeMateriel:
+      local: id
+      foreign: materiel_id
+      type: many
+    EleveMateriel:
+      local: id
+      foreign: materiel_id
+      type: many
+    MouvementMateriel:
+      local: id
+      foreign: materiel_id
+      type: many
+Mdph:
+  connection: doctrine
+  tableName: mdph
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    eleve_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    datecreationpps:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    nbheuresavs:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    dateenvoiedossier:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    etat:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    dateess:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datepjdom:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datepjident:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datebilanmedical:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    depotparent:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Eleve:
+      local: eleve_id
+      foreign: id
+      type: one
+    Bilan:
+      local: id
+      foreign: mdph_id
+      type: many
+    DemandeAvs:
+      local: id
+      foreign: mdph_id
+      type: many
+    DemandeMateriel:
+      local: id
+      foreign: mdph_id
+      type: many
+    DemandeOrientation:
+      local: id
+      foreign: mdph_id
+      type: many
+    DemandeSessad:
+      local: id
+      foreign: mdph_id
+      type: many
+    DemandeTransport:
+      local: id
+      foreign: mdph_id
+      type: many
+    PiecesDossier:
+      local: id
+      foreign: mdph_id
+      type: many
+MessageAccueil:
+  connection: doctrine
+  tableName: message_accueil
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    contenu:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+Modnonsco:
+  connection: doctrine
+  tableName: modnonsco
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    eleve_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    etabnonsco_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    niveauscolairespe_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    demijournee_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    classespe_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    quothorreff:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datedebut:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datefin:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Classespe:
+      local: classespe_id
+      foreign: id
+      type: one
+    Demijournee:
+      local: demijournee_id
+      foreign: id
+      type: one
+    Eleve:
+      local: eleve_id
+      foreign: id
+      type: one
+    Etabnonsco:
+      local: etabnonsco_id
+      foreign: id
+      type: one
+    Niveauscolairespe:
+      local: niveauscolairespe_id
+      foreign: id
+      type: one
+Mouvement:
+  connection: doctrine
+  tableName: mouvement
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nommouvement:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    MouvementMateriel:
+      local: id
+      foreign: mouvement_id
+      type: many
+MouvementMateriel:
+  connection: doctrine
+  tableName: mouvement_materiel
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    materiel_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    mouvement_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datedebut:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datefin:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    notes:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Materiel:
+      local: materiel_id
+      foreign: id
+      type: one
+    Mouvement:
+      local: mouvement_id
+      foreign: id
+      type: one
+Naturebilan:
+  connection: doctrine
+  tableName: naturebilan
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    libellenaturebilan:
+      type: string(70)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Bilan:
+      local: id
+      foreign: naturebilan_id
+      type: many
+Naturecontratavs:
+  connection: doctrine
+  tableName: naturecontratavs
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    naturecontrat:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    nouvnomnaturecontrat:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    DemandeAvs:
+      local: id
+      foreign: naturecontratavs_id
+      type: many
+Naturesuiviext:
+  connection: doctrine
+  tableName: naturesuiviext
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    libellenaturesuiviext:
+      type: string(70)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SuivitExterne:
+      local: id
+      foreign: naturesuiviext_id
+      type: many
+NiveauDgesco:
+  connection: doctrine
+  tableName: niveau_dgesco
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nomniveaudegsco:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    nomlongniveaudgesco:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Orientation:
+      local: id
+      foreign: niveaudgesco_id
+      type: many
+Niveauscolaire:
+  connection: doctrine
+  tableName: niveauscolaire
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nomniveauscolaire:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    nomlongniveauscolaire:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    degreetabsco:
+      type: string(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ordre:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Orientation:
+      local: id
+      foreign: niveauscolaire_id
+      type: many
+Niveauscolairespe:
+  connection: doctrine
+  tableName: niveauscolairespe
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    niveauscolaire:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    libelleniveauscolaire:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Modnonsco:
+      local: id
+      foreign: niveauscolairespe_id
+      type: many
+OrganismeSuivit:
+  connection: doctrine
+  tableName: organisme_suivit
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    quartier_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    nometabnonsco:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    typeetablissement_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    adresseetabnonscobat:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    adresseetabnonscorue:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ordre:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    teletabnonsco:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    faxetabnonsco:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    emailetabnonsco:
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    libellesuivit:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    secteur_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Quartier:
+      local: quartier_id
+      foreign: id
+      type: one
+    Secteur:
+      local: secteur_id
+      foreign: id
+      type: one
+    Typeetablissementnonsco:
+      local: typeetablissement_id
+      foreign: id
+      type: one
+    Specialiste:
+      local: id
+      foreign: organismesuivit_id
+      type: many
+    SuivitExterne:
+      local: id
+      foreign: organismesuivit_id
+      type: many
+Orientation:
+  connection: doctrine
+  tableName: orientation
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    niveaudgesco_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    niveauscolaire_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    libelleclasse:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    demijournee_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    eleve_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    classe_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    inclusion_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    rased_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    enseignant_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    etabsco_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    datedebut:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datefin:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    notes:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Classe:
+      local: classe_id
+      foreign: id
+      type: one
+    Demijournee:
+      local: demijournee_id
+      foreign: id
+      type: one
+    Eleve:
+      local: eleve_id
+      foreign: id
+      type: one
+    Enseignant:
+      local: enseignant_id
+      foreign: id
+      type: one
+    Etabsco:
+      local: etabsco_id
+      foreign: id
+      type: one
+    Inclusion:
+      local: inclusion_id
+      foreign: id
+      type: one
+    NiveauDgesco:
+      local: niveaudgesco_id
+      foreign: id
+      type: one
+    Niveauscolaire:
+      local: niveauscolaire_id
+      foreign: id
+      type: one
+    Rased:
+      local: rased_id
+      foreign: id
+      type: one
+Personne:
+  connection: doctrine
+  tableName: personne
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    quartier_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    nom:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    prenom:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    nom_nais:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    date_naissance:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    numen:
+      type: string(13)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    commentaire:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    adressebat:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    adresserue:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    tel1:
+      type: string(13)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    tel2:
+      type: string(13)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    email:
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Quartier:
+      local: quartier_id
+      foreign: id
+      type: one
+PiecesDossier:
+  connection: doctrine
+  tableName: pieces_dossier
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    mdph_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    libellepiece:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    restitue:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    daterecep:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Mdph:
+      local: mdph_id
+      foreign: id
+      type: one
+Position:
+  connection: doctrine
+  tableName: position
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    libelletypemateriel:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+PositionAvs:
+  connection: doctrine
+  tableName: position_avs
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    contratavs_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    typepositionavs_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    datedebut:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datefin:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    ContratAvs:
+      local: contratavs_id
+      foreign: id
+      type: one
+    TypePositionAvs:
+      local: typepositionavs_id
+      foreign: id
+      type: one
+Pps:
+  connection: doctrine
+  tableName: pps
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: true
+    libellepps:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Eleve:
+      local: id
+      foreign: pps_id
+      type: many
+Quartier:
+  connection: doctrine
+  tableName: quartier
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    commune_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    code_postal:
+      type: string(5)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    nom_quartier:
+      type: string(70)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Commune:
+      local: commune_id
+      foreign: id
+      type: one
+    Avs:
+      local: id
+      foreign: quartier_id
+      type: many
+    DirecteurEtab:
+      local: id
+      foreign: quartier_id
+      type: many
+    Eleve:
+      local: id
+      foreign: quartier_id
+      type: many
+    Enseignant:
+      local: id
+      foreign: quartier_id
+      type: many
+    Etabnonsco:
+      local: id
+      foreign: quartier_id
+      type: many
+    Etabsco:
+      local: id
+      foreign: quartier_id
+      type: many
+    OrganismeSuivit:
+      local: id
+      foreign: quartier_id
+      type: many
+    Personne:
+      local: id
+      foreign: quartier_id
+      type: many
+    ResponsableEleve:
+      local: id
+      foreign: quartier_id
+      type: many
+    Specialiste:
+      local: id
+      foreign: quartier_id
+      type: many
+Question:
+  connection: doctrine
+  tableName: question
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    num_question:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    question:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Dgesco:
+      local: id
+      foreign: question_id
+      type: many
+Rased:
+  connection: doctrine
+  tableName: rased
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    type_rased:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Orientation:
+      local: id
+      foreign: rased_id
+      type: many
+Reponse:
+  connection: doctrine
+  tableName: reponse
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    reponse:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    libelle_reponse:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    num_reponse:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    question_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    algorithm:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: sha1
+      notnull: true
+      autoincrement: false
+    degreetabsco:
+      type: string(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Dgesco:
+      local: id
+      foreign: reponse_id
+      type: many
+ResponsableEleve:
+  connection: doctrine
+  tableName: responsable_eleve
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    quartier_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    nom:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    prenom:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    nom_nais:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    date_naissance:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    numen:
+      type: string(13)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    commentaire:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    adressebat:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    adresserue:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    tel1:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    tel2:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    email:
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Quartier:
+      local: quartier_id
+      foreign: id
+      type: one
+    Tuteur:
+      local: id
+      foreign: responsableeleve_id
+      type: many
+Reunion:
+  connection: doctrine
+  tableName: reunion
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    eleve_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    typereunion_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    libellereunion:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datereunion:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    observation:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Eleve:
+      local: eleve_id
+      foreign: id
+      type: one
+    TypeReunion:
+      local: typereunion_id
+      foreign: id
+      type: one
+Secteur:
+  connection: doctrine
+  tableName: secteur
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    sfguarduser_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    libellesecteur:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SfGuardUser:
+      local: sfguarduser_id
+      foreign: id
+      type: one
+    Eleve:
+      local: id
+      foreign: secteur_id
+      type: many
+    OrganismeSuivit:
+      local: id
+      foreign: secteur_id
+      type: many
+    SecteurEtabsco:
+      local: id
+      foreign: secteur_id
+      type: many
+    Specialiste:
+      local: id
+      foreign: secteur_id
+      type: many
+SecteurEtabsco:
+  connection: doctrine
+  tableName: secteur_etabsco
+  columns:
+    etabsco_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    secteur_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+  relations:
+    Etabsco:
+      local: etabsco_id
+      foreign: id
+      type: one
+    Secteur:
+      local: secteur_id
+      foreign: id
+      type: one
+Sessad:
+  connection: doctrine
+  tableName: sessad
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    etabnonsco_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    typesessad_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    ordre:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Etabnonsco:
+      local: etabnonsco_id
+      foreign: id
+      type: one
+    Typesessad:
+      local: typesessad_id
+      foreign: id
+      type: one
+    SessadObtenu:
+      local: id
+      foreign: sessad_id
+      type: many
+SessadObtenu:
+  connection: doctrine
+  tableName: sessad_obtenu
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    eleve_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    sessad_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    datedebut:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ordre:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datefin:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    demandesessad_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    DemandeSessad:
+      local: demandesessad_id
+      foreign: id
+      type: one
+    Eleve:
+      local: eleve_id
+      foreign: id
+      type: one
+    Sessad:
+      local: sessad_id
+      foreign: id
+      type: one
+SfGuardForgotPassword:
+  connection: doctrine
+  tableName: sf_guard_forgot_password
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    user_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    unique_key:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    expires_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SfGuardUser:
+      local: user_id
+      foreign: id
+      type: one
+SfGuardGroup:
+  connection: doctrine
+  tableName: sf_guard_group
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    description:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SfGuardGroupPermission:
+      local: id
+      foreign: group_id
+      type: many
+    SfGuardUserGroup:
+      local: id
+      foreign: group_id
+      type: many
+SfGuardGroupPermission:
+  connection: doctrine
+  tableName: sf_guard_group_permission
+  columns:
+    group_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    permission_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SfGuardGroup:
+      local: group_id
+      foreign: id
+      type: one
+    SfGuardPermission:
+      local: permission_id
+      foreign: id
+      type: one
+SfGuardPermission:
+  connection: doctrine
+  tableName: sf_guard_permission
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    description:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SfGuardGroupPermission:
+      local: id
+      foreign: permission_id
+      type: many
+    SfGuardUserPermission:
+      local: id
+      foreign: permission_id
+      type: many
+SfGuardRememberKey:
+  connection: doctrine
+  tableName: sf_guard_remember_key
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    user_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    remember_key:
+      type: string(32)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ip_address:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SfGuardUser:
+      local: user_id
+      foreign: id
+      type: one
+SfGuardUser:
+  connection: doctrine
+  tableName: sf_guard_user
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    first_name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    last_name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    email_address:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    username:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    algorithm:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: sha1
+      notnull: true
+      autoincrement: false
+    salt:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    password:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    is_active:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '1'
+      notnull: false
+      autoincrement: false
+    is_super_admin:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    last_login:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Secteur:
+      local: id
+      foreign: sfguarduser_id
+      type: many
+    SfGuardForgotPassword:
+      local: id
+      foreign: user_id
+      type: many
+    SfGuardRememberKey:
+      local: id
+      foreign: user_id
+      type: many
+    SfGuardUserGroup:
+      local: id
+      foreign: user_id
+      type: many
+    SfGuardUserPermission:
+      local: id
+      foreign: user_id
+      type: many
+SfGuardUserGroup:
+  connection: doctrine
+  tableName: sf_guard_user_group
+  columns:
+    user_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    group_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SfGuardGroup:
+      local: group_id
+      foreign: id
+      type: one
+    SfGuardUser:
+      local: user_id
+      foreign: id
+      type: one
+SfGuardUserPermission:
+  connection: doctrine
+  tableName: sf_guard_user_permission
+  columns:
+    user_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    permission_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SfGuardPermission:
+      local: permission_id
+      foreign: id
+      type: one
+    SfGuardUser:
+      local: user_id
+      foreign: id
+      type: one
+Situation:
+  connection: doctrine
+  tableName: situation
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    situation:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+Specialiste:
+  connection: doctrine
+  tableName: specialiste
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    quartier_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    nom:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    prenom:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    nom_nais:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    date_naissance:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    numen:
+      type: string(13)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    commentaire:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    adressebat:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    adresserue:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    tel1:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    tel2:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    email:
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    specialite_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    secteur_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    organismesuivit_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    OrganismeSuivit:
+      local: organismesuivit_id
+      foreign: id
+      type: one
+    Quartier:
+      local: quartier_id
+      foreign: id
+      type: one
+    Secteur:
+      local: secteur_id
+      foreign: id
+      type: one
+    Specialite:
+      local: specialite_id
+      foreign: id
+      type: one
+    Bilan:
+      local: id
+      foreign: specialiste_id
+      type: many
+    SuivitExterne:
+      local: id
+      foreign: specialiste_id
+      type: many
+Specialite:
+  connection: doctrine
+  tableName: specialite
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    libellespecialite:
+      type: string(70)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Specialiste:
+      local: id
+      foreign: specialite_id
+      type: many
+SuivitExterne:
+  connection: doctrine
+  tableName: suivit_externe
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    specialiste_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    eleve_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    datedebutpriseencharge:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datefinpriseencharge:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    organismesuivit_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    naturesuiviext_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Eleve:
+      local: eleve_id
+      foreign: id
+      type: one
+    Naturesuiviext:
+      local: naturesuiviext_id
+      foreign: id
+      type: one
+    OrganismeSuivit:
+      local: organismesuivit_id
+      foreign: id
+      type: one
+    Specialiste:
+      local: specialiste_id
+      foreign: id
+      type: one
+Test:
+  connection: doctrine
+  tableName: test
+  columns:
+    id:
+      type: integer(8)
+      autoincrement: true
+      primary: true
+    colo:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+Traitement:
+  connection: doctrine
+  tableName: traitement
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    libelletraitement:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    DemandeMateriel:
+      local: id
+      foreign: traitement_id
+      type: many
+Transport:
+  connection: doctrine
+  tableName: transport
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    libelletransport:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    datedebut:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datefin:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    DemandeTransport:
+      local: id
+      foreign: transport_id
+      type: many
+    Transportobtenu:
+      local: id
+      foreign: transport_id
+      type: many
+Transportobtenu:
+  connection: doctrine
+  tableName: transportobtenu
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    transport_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    eleve_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    datedebut:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    datefin:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    demandetransport_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    DemandeTransport:
+      local: demandetransport_id
+      foreign: id
+      type: one
+    Eleve:
+      local: eleve_id
+      foreign: id
+      type: one
+    Transport:
+      local: transport_id
+      foreign: id
+      type: one
+Trouble:
+  connection: doctrine
+  tableName: trouble
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    trouble:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+Tuteur:
+  connection: doctrine
+  tableName: tuteur
+  columns:
+    eleve_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    responsableeleve_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    tuteurlegal:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    typeresponsableeleve_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    autretyperesponsable:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Eleve:
+      local: eleve_id
+      foreign: id
+      type: one
+    ResponsableEleve:
+      local: responsableeleve_id
+      foreign: id
+      type: one
+    TypeResponsableEleve:
+      local: typeresponsableeleve_id
+      foreign: id
+      type: one
+TypeClasse:
+  connection: doctrine
+  tableName: type_classe
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nomtypeclasse:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    nomlongtypeclasse:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ordre:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Classe:
+      local: id
+      foreign: typeclasse_id
+      type: many
+TypeContratAvs:
+  connection: doctrine
+  tableName: type_contrat_avs
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    typecontrat:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    ContratAvs:
+      local: id
+      foreign: typecontratavs_id
+      type: many
+TypePositionAvs:
+  connection: doctrine
+  tableName: type_position_avs
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    libelletypepositionavs:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    PositionAvs:
+      local: id
+      foreign: typepositionavs_id
+      type: many
+TypeResponsableEleve:
+  connection: doctrine
+  tableName: type_responsable_eleve
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    denomination:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Tuteur:
+      local: id
+      foreign: typeresponsableeleve_id
+      type: many
+TypeReunion:
+  connection: doctrine
+  tableName: type_reunion
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    libelletypereunion:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Reunion:
+      local: id
+      foreign: typereunion_id
+      type: many
+Typeetablissement:
+  connection: doctrine
+  tableName: typeetablissement
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nomtypeetablissement:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Classe:
+      local: id
+      foreign: typeetablissement_id
+      type: many
+    Etabsco:
+      local: id
+      foreign: typeetablissement_id
+      type: many
+Typeetablissementnonsco:
+  connection: doctrine
+  tableName: typeetablissementnonsco
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nomtypeetablissement:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Etabnonsco:
+      local: id
+      foreign: typeetablissement_id
+      type: many
+    OrganismeSuivit:
+      local: id
+      foreign: typeetablissement_id
+      type: many
+Typemateriel:
+  connection: doctrine
+  tableName: typemateriel
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    libelletypemateriel:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    DemandeMateriel:
+      local: id
+      foreign: typemateriel_id
+      type: many
+    DetailCommande:
+      local: id
+      foreign: typemateriel_id
+      type: many
+    Materiel:
+      local: id
+      foreign: typemateriel_id
+      type: many
+Typesessad:
+  connection: doctrine
+  tableName: typesessad
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    libelletypesessad:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    DemandeSessad:
+      local: id
+      foreign: typesessad_id
+      type: many
+    Sessad:
+      local: id
+      foreign: typesessad_id
+      type: many

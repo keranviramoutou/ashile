@@ -1,0 +1,47 @@
+<?php
+
+class academieConfiguration extends sfApplicationConfiguration
+{
+	  
+    protected $frontendRouting = null;
+	
+	  public function configure()
+	  {
+	  }
+    public function generateFrontendUrl($name, $parameters = array())
+    {
+
+			/*	  if ($_SERVER['HTTP_HOST'] == 'ashile2.ac-reunion.fr' && ($_SERVER['REMOTE_ADDR'] == '192.168.220.6' || $_SERVER['REMOTE_ADDR'] == '192.168.220.3') ) //portail.ac-reunion.fr
+				  {
+						 return 'https://portail.ac-reunion.fr/ashile/frontend.php' . $this->getFrontendRouting()->generate($name, $parameters);
+				
+				} elseif ($_SERVER['HTTP_HOST'] == 'ashile.ac-reunion.fr' && ($_SERVER['REMOTE_ADDR'] == '192.168.220.6' || $_SERVER['REMOTE_ADDR'] == '192.168.220.3')) { 
+						 return 'https://portail.ac-reunion.fr/ashilep/frontend.php' . $this->getFrontendRouting()->generate($name, $parameters);
+				  } 
+				
+				 if ($_SERVER['HTTP_HOST'] == 'ashile2.ac-reunion.fr' && $_SERVER['REMOTE_ADDR'] == '172.31.176.121' ) // accueil.in.ac-reunion.fr
+				  {
+						 return 'https://accueil.in.ac-reunion.fr/ashile/frontend.php' . $this->getFrontendRouting()->generate($name, $parameters);
+				 
+				 } elseif($_SERVER['HTTP_HOST'] == 'ashile.ac-reunion.fr' && $_SERVER['REMOTE_ADDR'] == '172.31.176.121' ){
+						 return 'https://accueil.in.ac-reunion.fr/ashilep/frontend.php' . $this->getFrontendRouting()->generate($name, $parameters);
+				  }      
+
+       
+    }*/
+
+    public function getFrontendRouting()
+    {
+        if (!$this->frontendRouting)
+        {
+            $this->frontendRouting = new sfPatternRouting(new sfEventDispatcher());
+
+            $config = new sfRoutingConfigHandler();
+            $routes = $config->evaluate(array(sfConfig::get('sf_apps_dir') . '/frontend/config/routing.yml'));
+
+            $this->frontendRouting->setRoutes($routes);
+        }
+
+        return $this->frontendRouting;
+    }
+}

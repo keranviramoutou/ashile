@@ -1,0 +1,150 @@
+sauvegarde de l'applicationsauv_ashile_prod.z
+>> cache     Clearing cache type "all" for "accueil" app and "dev" env
+>> file+     /data/appli/ashile/data/accueil_dev-cli.lck
+>> chmod 777 /data/appli/ashile/data/accueil_dev-cli.lck
+>> file-     /data/appli/ashile/cache/accuei.../config_config_handlers.yml.php
+>> file-     /data/appli/ashile/cache/accueil/dev/config/config_app.yml.php
+>> file-     /data/appli/ashile/cache/accuei.../config/config_phpexcel.yml.php
+>> file-     /data/appli/ashile/cache/accuei.../config/config_settings.yml.php
+>> file-     /data/appli/ashile/data/accueil_dev-cli.lck
+>> cache     Clearing cache type "all" for "accueil" app and "prod" env
+>> file+     /data/appli/ashile/data/accueil_prod-cli.lck
+>> chmod 777 /data/appli/ashile/data/accueil_prod-cli.lck
+>> file-     /data/appli/ashile/cache/accuei.../config_config_handlers.yml.php
+>> file-     /data/appli/ashile/cache/accuei...fig/config_core_compile.yml.php
+>> file-     /data/appli/ashile/cache/accuei...les_main_config_filters.yml.php
+>> file-     /data/appli/ashile/cache/accuei...ules_main_config_module.yml.php
+>> file-     /data/appli/ashile/cache/accueil/prod/config/config_app.yml.php
+>> file-     /data/appli/ashile/cache/accuei.../config/config_phpexcel.yml.php
+>> file-     /data/appli/ashile/cache/accuei.../config/config_settings.yml.php
+>> file-     /data/appli/ashile/cache/accuei...odules_main_config_view.yml.php
+>> file-     /data/appli/ashile/cache/accuei.../config/config_autoload.yml.php
+>> file-     /data/appli/ashile/cache/accuei...config/config_databases.yml.php
+>> file-     /data/appli/ashile/cache/accuei...config/config_factories.yml.php
+>> file-     /data/appli/ashile/cache/accuei...d/config/config_routing.yml.php
+>> file-     /data/appli/ashile/cache/accuei...es_main_config_security.yml.php
+>> file-     /data/appli/ashile/data/accueil_prod-cli.lck
+>> cache     Clearing cache type "all" for "frontend" app and "dev" env
+>> file+     /data/appli/ashile/data/frontend_dev-cli.lck
+>> chmod 777 /data/appli/ashile/data/frontend_dev-cli.lck
+>> file-     /data/appli/ashile/cache/fronte.../config_config_handlers.yml.php
+>> file-     /data/appli/ashile/cache/frontend/dev/config/config_app.yml.php
+>> file-     /data/appli/ashile/cache/fronte.../config/config_phpexcel.yml.php
+>> file-     /data/appli/ashile/cache/fronte.../config/config_settings.yml.php
+>> file-     /data/appli/ashile/data/frontend_dev-cli.lck
+>> cache     Clearing cache type "all" for "frontend" app and "test" env
+>> file+     /data/appli/ashile/data/frontend_test-cli.lck
+>> chmod 777 /data/appli/ashile/data/frontend_test-cli.lck
+>> file-     /data/appli/ashile/cache/fronte.../config_config_handlers.yml.php
+>> file-     /data/appli/ashile/cache/frontend/test/config/config_app.yml.php
+>> file-     /data/appli/ashile/cache/fronte.../config/config_phpexcel.yml.php
+>> file-     /data/appli/ashile/cache/fronte.../config/config_settings.yml.php
+>> file-     /data/appli/ashile/data/frontend_test-cli.lck
+>> cache     Clearing cache type "all" for "frontend" app and "prod" env
+>> file+     /data/appli/ashile/data/frontend_prod-cli.lck
+>> chmod 777 /data/appli/ashile/data/frontend_prod-cli.lck
+>> file-     /data/appli/ashile/cache/fronte.../config_config_handlers.yml.php
+>> file-     /data/appli/ashile/cache/frontend/prod/config/config_app.yml.php
+>> file-     /data/appli/ashile/cache/fronte.../config/config_phpexcel.yml.php
+>> file-     /data/appli/ashile/cache/fronte.../config/config_settings.yml.php
+>> file-     /data/appli/ashile/data/frontend_prod-cli.lck
+>> cache     Clearing cache type "all" for "academie" app and "dev" env
+>> file+     /data/appli/ashile/data/academie_dev-cli.lck
+>> chmod 777 /data/appli/ashile/data/academie_dev-cli.lck
+>> file-     /data/appli/ashile/cache/academ.../config_config_handlers.yml.php
+>> file-     /data/appli/ashile/cache/academie/dev/config/config_app.yml.php
+>> file-     /data/appli/ashile/cache/academ.../config/config_phpexcel.yml.php
+>> file-     /data/appli/ashile/cache/academ.../config/config_settings.yml.php
+>> file-     /data/appli/ashile/data/academie_dev-cli.lck
+>> cache     Clearing cache type "all" for "academie" app and "test" env
+>> file+     /data/appli/ashile/data/academie_test-cli.lck
+>> chmod 777 /data/appli/ashile/data/academie_test-cli.lck
+>> file-     /data/appli/ashile/cache/academ.../config_config_handlers.yml.php
+>> file-     /data/appli/ashile/cache/academie/test/config/config_app.yml.php
+>> file-     /data/appli/ashile/cache/academ.../config/config_phpexcel.yml.php
+>> file-     /data/appli/ashile/cache/academ.../config/config_settings.yml.php
+>> file-     /data/appli/ashile/data/academie_test-cli.lck
+>> cache     Clearing cache type "all" for "academie" app and "prod" env
+>> file+     /data/appli/ashile/data/academie_prod-cli.lck
+>> chmod 777 /data/appli/ashile/data/academie_prod-cli.lck
+>> file-     /data/appli/ashile/cache/academ...stion/actions/actions.class.php
+>> file-     /data/appli/ashile/cache/academ...mplates/_list_batch_actions.php
+>> file-     /data/appli/ashile/cache/academ...tion/templates/_list_header.php
+>> file-     /data/appli/ashile/cache/academ...stion/templates/_form_field.php
+>> file-     /data/appli/ashile/cache/academ...ion/templates/_list_actions.php
+>> file-     /data/appli/ashile/cache/academ...ion/templates/_form_actions.php
+>> file-     /data/appli/ashile/cache/academ...on/templates/_form_fieldset.php
+>> file-     /data/appli/ashile/cache/academ...stion/templates/editSuccess.php
+>> file-     /data/appli/ashile/cache/academ...utoQuestion/templates/_form.php
+>> file-     /data/appli/ashile/cache/academ...oQuestion/templates/_assets.php
+>> file-     /data/appli/ashile/cache/academ...ates/_list_td_batch_actions.php
+>> file-     /data/appli/ashile/cache/academ.../templates/_list_td_tabular.php
+>> file-     /data/appli/ashile/cache/academ.../templates/_list_td_stacked.php
+>> file-     /data/appli/ashile/cache/academ...Question/templates/_filters.php
+>> file-     /data/appli/ashile/cache/academ.../templates/_list_td_actions.php
+>> file-     /data/appli/ashile/cache/academ...mplates/_list_field_boolean.php
+>> file-     /data/appli/ashile/cache/academ.../templates/_list_th_stacked.php
+>> file-     /data/appli/ashile/cache/academ...stion/templates/_pagination.php
+>> file-     /data/appli/ashile/cache/academ...tion/templates/_list_footer.php
+>> file-     /data/appli/ashile/cache/academ...estion/templates/newSuccess.php
+>> file-     /data/appli/ashile/cache/academ...tion/templates/indexSuccess.php
+>> file-     /data/appli/ashile/cache/academ...on/templates/_filters_field.php
+>> file-     /data/appli/ashile/cache/academ...Question/templates/_flashes.php
+>> file-     /data/appli/ashile/cache/academ.../templates/_list_th_tabular.php
+>> file-     /data/appli/ashile/cache/academ...utoQuestion/templates/_list.php
+>> file-     /data/appli/ashile/cache/academ...tion/templates/_form_header.php
+>> file-     /data/appli/ashile/cache/academ...tion/templates/_form_footer.php
+>> file-     /data/appli/ashile/cache/academ...eneratorConfiguration.class.php
+>> file-     /data/appli/ashile/cache/academ...estionGeneratorHelper.class.php
+>> file-     /data/appli/ashile/cache/academ...ponse/actions/actions.class.php
+>> file-     /data/appli/ashile/cache/academ...mplates/_list_batch_actions.php
+>> file-     /data/appli/ashile/cache/academ...onse/templates/_list_header.php
+>> file-     /data/appli/ashile/cache/academ...ponse/templates/_form_field.php
+>> file-     /data/appli/ashile/cache/academ...nse/templates/_list_actions.php
+>> file-     /data/appli/ashile/cache/academ...nse/templates/_form_actions.php
+>> file-     /data/appli/ashile/cache/academ...se/templates/_form_fieldset.php
+>> file-     /data/appli/ashile/cache/academ...ponse/templates/editSuccess.php
+>> file-     /data/appli/ashile/cache/academ...autoReponse/templates/_form.php
+>> file-     /data/appli/ashile/cache/academ...toReponse/templates/_assets.php
+>> file-     /data/appli/ashile/cache/academ...ates/_list_td_batch_actions.php
+>> file-     /data/appli/ashile/cache/academ.../templates/_list_td_tabular.php
+>> file-     /data/appli/ashile/cache/academ.../templates/_list_td_stacked.php
+>> file-     /data/appli/ashile/cache/academ...oReponse/templates/_filters.php
+>> file-     /data/appli/ashile/cache/academ.../templates/_list_td_actions.php
+>> file-     /data/appli/ashile/cache/academ...mplates/_list_field_boolean.php
+>> file-     /data/appli/ashile/cache/academ.../templates/_list_th_stacked.php
+>> file-     /data/appli/ashile/cache/academ...ponse/templates/_pagination.php
+>> file-     /data/appli/ashile/cache/academ...onse/templates/_list_footer.php
+>> file-     /data/appli/ashile/cache/academ...eponse/templates/newSuccess.php
+>> file-     /data/appli/ashile/cache/academ...onse/templates/indexSuccess.php
+>> file-     /data/appli/ashile/cache/academ...se/templates/_filters_field.php
+>> file-     /data/appli/ashile/cache/academ...oReponse/templates/_flashes.php
+>> file-     /data/appli/ashile/cache/academ.../templates/_list_th_tabular.php
+>> file-     /data/appli/ashile/cache/academ...autoReponse/templates/_list.php
+>> file-     /data/appli/ashile/cache/academ...onse/templates/_form_header.php
+>> file-     /data/appli/ashile/cache/academ...onse/templates/_form_footer.php
+>> file-     /data/appli/ashile/cache/academ...eneratorConfiguration.class.php
+>> file-     /data/appli/ashile/cache/academ...eponseGeneratorHelper.class.php
+>> file-     /data/appli/ashile/cache/academ...reponse_config_security.yml.php
+>> file-     /data/appli/ashile/cache/academ...s_eleve_config_security.yml.php
+>> file-     /data/appli/ashile/cache/academ.../config_config_handlers.yml.php
+>> file-     /data/appli/ashile/cache/academie/prod/config/config_app.yml.php
+>> file-     /data/appli/ashile/cache/academ.../config/config_phpexcel.yml.php
+>> file-     /data/appli/ashile/cache/academ...s_reponse_config_module.yml.php
+>> file-     /data/appli/ashile/cache/academ.../config/config_settings.yml.php
+>> file-     /data/appli/ashile/cache/academ...es_eleve_config_filters.yml.php
+>> file-     /data/appli/ashile/cache/academ.../config/config_autoload.yml.php
+>> file-     /data/appli/ashile/cache/academ...estion_config_generator.yml.php
+>> file-     /data/appli/ashile/cache/academ...les_reponse_config_view.yml.php
+>> file-     /data/appli/ashile/cache/academ...config/config_databases.yml.php
+>> file-     /data/appli/ashile/cache/academ...es_question_config_view.yml.php
+>> file-     /data/appli/ashile/cache/academ...uestion_config_security.yml.php
+>> file-     /data/appli/ashile/cache/academ...config/config_factories.yml.php
+>> file-     /data/appli/ashile/cache/academ..._reponse_config_filters.yml.php
+>> file-     /data/appli/ashile/cache/academ...d/config/config_routing.yml.php
+>> file-     /data/appli/ashile/cache/academ..._question_config_module.yml.php
+>> file-     /data/appli/ashile/cache/academ...eponse_config_generator.yml.php
+>> file-     /data/appli/ashile/cache/academ...les_eleve_config_module.yml.php
+>> file-     /data/appli/ashile/cache/academ...question_config_filters.yml.php
+>> file-     /data/appli/ashile/cache/academ...dules_eleve_config_view.yml.php
+>> file-     /data/appli/ashile/data/academie_prod-cli.lck

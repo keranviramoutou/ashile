@@ -1,0 +1,18 @@
+index:
+  enabled:     true
+
+new:
+  enabled:     false
+
+edit:
+  enabled:     false
+
+_form:
+  enabled:     false
+
+_contratAvs:
+  enabled:     false
+
+
+all:
+ lifetime: 600

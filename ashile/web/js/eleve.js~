@@ -1,0 +1,109 @@
+  function ValiderForm() {
+         var message = "";
+         var flag_nom = 0 ;
+         var flag_prenom = 0 ;
+         var flag_message = 0;
+     
+      //var regex_nom = new RegExp("/^([\s]*[-A-Z\'\`a-zàáâãäåçèéêëìíîïðòóôõöùúûüýÿÊËÄ ]+[\s]*)+$/");
+    var regex_nom= new RegExp("^[-A-Z\'\`a-zàáâãäåçèéêëìíîïðòóôõöùúûüýÿÊÈÉËÄ ]*$", "g");
+      var regex_prenom = new RegExp("^[-A-Z\'\`a-zàáâãäåçèéêëìíîïðòóôõöùúûüýÿÊÈÉËÄ ]*$", "g");
+     var date = "valeur";
+     
+      //contrôle de la chaine saisie pour le nom
+      ///////////////////////////////////////////
+     
+      var nom = $j("#eleve_nom").val();
+      if (regex_nom.test($j("#eleve_nom").val())) {
+ 
+       }
+       
+       
+        else{
+          var flag_nom = 1 ;
+          message = message  + "- Format incorrect, caractère non autorisé dans le Nom "+ " \n";
+          var flag_message = 1;
+      }
+     
+
+       
+       
+       
+        if (nom.length <= 2 && nom.length >= 1){ var message = message + "- Saisir au moins 3 caractères dans le nom"+ " \n"
+        var flag_message = 1;
+     
+      }
+           
+       if   ( nom.length == 0  ) {
+            var message =  "- Renseigner le Nom " + " \n";
+           var flag_message = 1;
+                  }            
+                
+                  //contrôle de la chaine saisie pour le prénom
+      /////////////////////////////////////////////
+      var prenom = $j("#eleve_prenom").val();
+
+      if (regex_prenom.test($j("#eleve_prenom").val())) {
+     }     
+            else{
+              var flag_prenom = 1 ;
+              //alert ('Format incorrect, caractère non autorisé dans le Nom ')
+              message = message  + "- Format incorrect, caractère non autorisé dans le Prénom" + " \n";
+              var flag_message = 1;
+         // return false;
+      }
+     
+      if (prenom.length <= 2 && prenom.length >= 1){
+          var message = message + "- Saisir au moins 3 caractères dans le prénom"+ " \n";
+          var flag_message = 1;
+      }
+     
+      
+      
+      
+        if   (prenom.length == 0 ) {
+              var message = message +  "- Renseigner le Prénom " + " \n";
+              var flag_message = 1;}     
+                
+     
+      //controle saisie du motif de fin de prise en charge
+      ////////////////////////////////////////////////////
+     
+     
+        var motif = $j("#eleve_motif").val();
+      if   ($j("#eleve_datesortie").val() != "" && motif.length == 0 ) {
+            var message = message +  "- Saisir un motif si date de Fin de prise en Charge renseignée" + " \n";
+            var flag_message = 1;
+        }  
+       
+          if   ($j("#eleve_datesortie").val() == "" && motif.length > 0 ) {
+            var message = message +  "- Saisir une date de Fin de prise en Charge ,vous avez saisi un motif de fin de prise en charge" + " \n";
+            var flag_message = 1;
+        } 
+      
+       if ( $j("#eleve_datenaissance").val() == "" ) {
+           var message = message +"- Renseigner la date de Naissance "+ " \n" ;
+           var flag_message = 1;
+       } ; 
+
+      if ( $j("#eleve_sexe").val() == "" ) {
+          var message = message + "- Renseigner le Sexe"+ " \n" ;
+          var flag_message = 1;
+      } ;
+     
+      if ( $j("#eleve_sexe_G").is(":checked") == false && $j("#eleve_sexe_F").is(":checked") ==false ) {
+          var message = message + " le Sexe";
+          var flag_message = 1;
+      } ;
+     
+      //Affichage du message d'alerte ou submit de la form
+      //////////////////////////////////////////////////////
+     
+      if (flag_message == 0 ) {
+          document.eleve.submit();
+      }
+      else if (flag_message = 1) {
+          alert(message );
+          var message = "";
+          return false;
+      } 
+   }

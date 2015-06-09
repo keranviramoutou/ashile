@@ -1,0 +1,40 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           anneescolaire
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          anneescolaire
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: 
+         _edit: ~ 
+         _save: ~ 
+         _list: ~     
+      fields:
+        datedebutanneescolaire: {label: "Debut année scolaire", date_format: "dd-MM-yyyy"}
+        datefinanneescolaire: {label: "Fin année scolaire", date_format: "dd-MM-yyyy"}
+      list:
+        title: <h2>Année scolaire en cours</h2><br> si l'année scolaire est modifiée, les scolarités ordinaires affichées en cours ou en historique seront apparentes ou non<br>en fonction de l'année scolaire saisie.
+        display: [datedebutanneescolaire, datefinanneescolaire]
+        object_actions: 
+          _edit: ~ 
+        actions: false
+        
+
+         
+      filter:
+        class: false
+      form:    ~
+      edit:
+        title: Edition de l'année scolaire en cours
+        actions: 
+            _save: ~ 
+            _list: ~ 
+      new:
+        title: Création d'une année scolaire

@@ -1,0 +1,127 @@
+body {
+	font-family: Arial, Verdana;
+	font-size: 12px;
+	width: auto;
+	margin: 0;
+	background: fixed url("../images/bg.jpg") repeat-x;
+}
+/*div qui contient toute la page*/
+#global {
+	position: absolute;
+	width: 1047px;
+	left: 50%;
+	margin-left: -524px;
+    height: 100%;
+	background: url("../images/bg_global.png") repeat-y;
+}
+/*Colonne à gauche*/
+#colonne_nav {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 240px;
+    height: 100%;
+	#background: url(../images/colonne_nav.png) repeat-y;
+}
+/*Logo academie réunion*/
+#logo {
+	width: 120px;
+	height:162px;
+	position: absolute;
+	margin-left: 71px;
+	margin-top: 20px;
+	background: url(../images/logo-aca-reunion-2010.png) no-repeat;
+	cursor: pointer;
+}
+/*div contenant www.ac-reunion.fr*/
+#www {
+	width: 20px;
+	height: 300px;
+	position: absolute;
+	margin-left: 0px;
+	margin-top: 0px;
+	cursor:pointer;
+}
+
+
+#menu {
+	padding: 250px 35px;
+}
+
+#menu .accordionButton {
+	width: auto;
+	float: left;
+	border-bottom: 1px solid #FFFFFF;
+	cursor: pointer;
+}
+
+#menu .accordionContent {
+	width: auto;
+	float: left;
+	display: none;
+}
+
+
+#header {
+	position: absolute;
+	top: 0px;
+	height: 150px;
+	width: 750px;
+	left: 240px;
+}
+/*div de l'image ash-974*/
+#logo_ash {
+	height: 200px;
+	width: 727px;
+	background: url(../images/logoASH.jpg) no-repeat;
+}
+/*div contenant le contenu dynamique*/
+#content {
+	position: absolute;
+	left:  245px;
+	top: 210px;
+	width: 784px;
+ 	height: auto;
+ 	overflow: hidden;
+}
+
+.texte_nom {
+	text-transform: uppercase;
+}
+#spirale {
+	position: absolute;
+	left: 28px;
+	width: 87px;
+	background: url(../images/cahier_spirale_fonce.png) repeat-y;
+	top: 47px;
+    height: 100%;
+}
+/* FORMULAIRE*/
+#content h1 {
+    color:#1F003E;
+    font-size: large;
+    padding-left: 28px;
+}
+form ul {
+	list-style-type: none;
+}
+
+form ul li {
+	padding-top: 8px;
+}
+
+form ul li label{
+	font-weight: normal;
+	width: 100px;
+	float:left;
+	text-align: right;
+	padding-right: 10px;
+
+}
+
+/* sfGuard*/
+#form_message {
+  display: none;
+  font-weight: bold;
+  color: red;
+}

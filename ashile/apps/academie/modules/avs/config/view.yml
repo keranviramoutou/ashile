@@ -1,0 +1,9 @@
+aideSuccess:
+  has_layout: false
+  
+listposSuccess:
+  has_layout: true
+  layout:     layoutpopup
+  
+
+  

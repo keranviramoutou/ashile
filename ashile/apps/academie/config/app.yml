@@ -1,0 +1,17 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+#all:
+
+sf_admin_theme_jroller_plugin:
+  web_dir:      /sfAdminThemejRollerPlugin # specify specific folder where to pick your jquery stuff, ui and themes.  
+  use_jquery:   true # default. use the packaged jquery/UI
+  theme:        redmond # default. 
+  css_reset:    true # default. reset default css (from Blueprint CSS)
+  fr:
+    format_date : "d/m/Y"
+    format_date_horaire: "d/m/Y H:i"
+  
+ 
+

@@ -1,0 +1,7 @@
+stylesheets:    [basic.css, basic_ie.css, demo.css]
+javascripts:    [ oXHR.js, jquery-1.6.2.min.js, basic.js, jquery.simplemodal.js]
+convSuccess:
+  has_layout: false
+aideSuccess:
+  has_layout: false
+

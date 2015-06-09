@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Avs
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          avs
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: 
+        dateess:{ date_format: dd-MM-yyyy }    
+      
+      list:
+        title: Liste des AVS
+        display: [nom, prenom]        
+      filter:
+        display: [nom]  
+      form:    ~
+      edit:
+        title: Edition des AVS
+      new:
+        title: Création des AVS
+     

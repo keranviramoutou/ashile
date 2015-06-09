@@ -1,0 +1,428 @@
+/**
+ *********************************************
+ * Prototype of styles for horizontal CSS-menu
+ * @data 25.01.2010
+ *********************************************
+ * (X)HTML-scheme:
+ *  <div id="menu">
+ *      <ul class="menu">
+ *          <li><a href="#" class="parent"><span>level 1</span></a>
+ *              <div><ul>
+ *                  <li><a href="#" class="parent"><span>level 2</span></a>
+ *                      <div><ul><li><a href="#"><span>level 3</span></a></li></ul></div>
+ *                  </li>
+ *              </ul></div>
+ *          </li>
+ *          <li class="last"><a href="#"><span>level 1</span></a></li>
+ *      </ul>
+ *  </div>
+ *********************************************
+ */
+/*div:first-child {
+  opacity: .99; 
+}
+*/
+
+
+#menu1, #menu1 * {
+    list-style:none;
+    border:0;
+    padding:0;
+    margin:0;
+}
+#menu1 {
+    width:173px;
+    position:relative;
+    z-index:999;
+  /*  background:url(../images/base.png) -173px 0; */
+   /* padding-top:20px; */
+   padding-top:1px;
+}
+#menu1 ul {
+/*    background:url(../images/base.png) 0 bottom; */
+    padding-bottom:11px;
+}
+* html #menu1, * html #menu1 ul { 
+/*	background-image:url(../images/base.gif); */
+ }
+#menu1 div {
+    width:180px;
+    position:relative;
+    background:url(../images/sub.png) -180px 0;
+    padding-top:9px;
+}
+#menu1 div ul {
+    background:url(../images/sub.png) 0 bottom;
+    padding-bottom:5px;
+}
+* html #menu1 div, * html #menu1 div ul { background-image:url(../images/sub.gif); }
+*+html #menu1 li { border-bottom:1px solid transparent; }
+#menu1 li div {
+    visibility:hidden;
+    position:absolute;
+    margin:-44px 0 0 -2px;
+    left:100%;
+}
+* html #menu1 li div, *+html #menu1 li div { margin-top:-42px; }
+#menu1 li:hover>div { visibility:visible; }
+* html #menu1 li { height:34px; }
+#menu1 li a {
+    display:block;
+    font-size:11px;
+    font-family:'Trebuchet MS', Arial, Verdana;
+    font-weight:bold;
+    text-decoration:none;
+    color:#fff;
+    padding-top:11px;
+    cursor:pointer;
+    position:relative;
+    z-index:9;
+}
+*+html #menu1 li a { padding-top:12px; }
+* html #menu1 li a { padding-top:10px; }
+#menu1 li.current a,
+#menu1 li a:hover { background:url(../images/base-select.gif) no-repeat -163px 0; }
+#menu1 li span {
+    line-height:14px;
+    padding:0 19px 11px 17px;
+    display:block;
+}
+*+html #menu1 li span { padding-bottom:10px; }
+* html #menu1 li span {
+    height:24px;
+    padding-bottom:2px;
+}
+#menu1 li.current a span,
+#menu1 li a:hover span { background:url(../images/base-select.gif) no-repeat 5px bottom; }
+#menu1 li a:hover span { color:#515151; }
+#menu1 li a.parent:hover span { background:url(../images/base-select.gif) no-repeat -331px bottom; }
+#menu1.js-active li.current a,
+#menu1.js-active li.current a span,
+#menu1.js-active li a:hover,
+#menu1.js-active li a:hover span { background-image:url(../images/pix.gif); }
+#menu1 li a.parent span, #menu1.js-active li a.parent span { background:url(../images/base-select.gif) no-repeat -499px bottom; }
+#menu1 li.current li a,
+#menu1 li.current li a span { background-image:url(../images/pix.gif); }
+#menu1 li li { border:0; }
+#menu1 li li a span { color:#515151; }
+#menu1 li li a.parent span, #menu1.js-active li li a.parent span { background:url(../images/sub-select.gif) no-repeat -520px bottom; }
+#menu1 li li a:hover, #menu1.js-active li li a:hover { background:url(../images/sub-select.gif) no-repeat -170px 0; }
+#menu1 li li a:hover span,
+#menu1.js-active li li a:hover span {
+    background:url(../images/sub-select.gif) no-repeat 5px bottom;
+    color:#fff;
+}
+#menu1 li li a.parent:hover span, #menu1.js-active li li a.parent:hover span { background:url(../images/sub-select.gif) no-repeat -345px bottom; }
+
+
+#menu1 li.back {
+    width:170px;
+    z-index:8;
+    position:absolute;
+    background:url(../images/lavalamp.gif) no-repeat 5px bottom;
+}
+#menu1 li.back .left {
+    width:170px;
+    float:none;
+    position:relative;
+    top:0;
+    left:0;
+    height:7px;
+    overflow:hidden;
+    padding:0;
+    margin:0;
+    visibility:visible;
+    background:url(../images/lavalamp.gif) no-repeat -163px 0;
+} 
+
+
+/**
+ *********************************************
+ * Prototype of styles for horizontal CSS-menu
+ * @data 25.01.2010
+ *********************************************
+ * (X)HTML-scheme:
+ *  <div id="menu">
+ *      <ul class="menu">
+ *          <li><a href="#" class="parent"><span>level 1</span></a>
+ *              <div><ul>
+ *                  <li><a href="#" class="parent"><span>level 2</span></a>
+ *                      <div><ul><li><a href="#"><span>level 3</span></a></li></ul></div>
+ *                  </li>
+ *              </ul></div>
+ *          </li>
+ *          <li class="last"><a href="#"><span>level 1</span></a></li>
+ *      </ul>
+ *  </div>
+ *********************************************
+ */
+
+#menu2, #menu2 * {
+    list-style:none;
+    border:0;
+    padding:0;
+    margin:0;
+}
+#menu2 {
+    width:173px;
+    position:relative;
+  /*  background:url(../images/base.png) -173px 0; */
+    padding-top:20px;
+}
+#menu2 ul {
+/*    background:url(../images/base.png) 0 bottom; */
+    padding-bottom:11px;
+}
+* html #menu2, * html #menu2 ul { 
+/*	background-image:url(../images/base.gif); */
+ }
+#menu2 div {
+    width:180px;
+    position:relative;
+    background:url(../images/sub2.png) -180px 0;
+    padding-top:9px;
+    z-index: 1;
+}
+#menu2 div ul {
+    background:url(../images/sub2.png) 0 bottom;
+    padding-bottom:5px;
+}
+* html #menu2 div, * html #menu2 div ul { background-image:url(../images/sub2.gif); }
+*+html #menu2 li { border-bottom:1px solid transparent; }
+#menu2 li div {
+    visibility:hidden;
+    position:absolute;
+    margin:-44px 0 0 -2px;
+    left:100%;
+}
+* html #menu2 li div, *+html #menu2 li div { margin-top:-42px; }
+#menu2 li:hover>div { visibility:visible; }
+* html #menu2 li { height:34px; }
+#menu2 li a {
+    display:block;
+    font-size:11px;
+    font-family:'Trebuchet MS', Arial, Verdana;
+    font-weight:bold;
+    text-decoration:none;
+    color:#840ca6;
+    padding-top:11px;
+    cursor:pointer;
+    position:relative;
+}
+*+html #menu2 li a { padding-top:12px; }
+* html #menu2 li a { padding-top:10px; }
+#menu2 li.current a,
+#menu2 li a:hover { background:url(../images/base-select2.gif) no-repeat -163px 0; }
+#menu2 li span {
+	position: relative;
+    line-height:14px;
+    padding:0 19px 11px 17px;
+    display:block;
+}
+*+html #menu2 li span { padding-bottom:10px; }
+* html #menu2 li span {
+    height:24px;
+    padding-bottom:2px;
+}
+#menu2 li.current a span,
+#menu2 li a:hover span { background:url(../images/base-select2.gif) no-repeat 5px bottom; }
+#menu2 li a:hover span { color:#515151; }
+#menu2 li a.parent:hover span { background:url(../images/base-select2.gif) no-repeat -331px bottom; }
+#menu2.js-active li.current a,
+#menu2.js-active li.current a span,
+#menu2.js-active li a:hover,
+#menu2.js-active li a:hover span { background-image:url(../images/pix.gif); }
+#menu2 li a.parent span, #menu2.js-active li a.parent span { background:url(../images/base-select2.gif) no-repeat -499px bottom; }
+#menu2 li.current li a,
+#menu2 li.current li a span { background-image:url(../images/pix.gif); }
+#menu2 li li { border:0; }
+#menu2 li li a span { color:#515151; }
+#menu2 li li a.parent span, #menu2.js-active li li a.parent span { background:url(../images/sub-select.gif) no-repeat -520px bottom; }
+#menu2 li li a:hover, #menu2.js-active li li a:hover { background:url(../images/sub-select2.gif) no-repeat -170px 0; }
+#menu2 li li a:hover span,
+#menu2.js-active li li a:hover span {
+    background:url(../images/sub-select2.gif) no-repeat 5px bottom;
+    color:#aaa;
+}
+#menu2 li li a.parent:hover span, #menu2.js-active li li a.parent:hover span { background:url(../images/sub-select2.gif) no-repeat -345px bottom; }
+
+
+#menu2 li.back {
+    width:170px;
+    z-index:8;
+    position:absolute;
+    background:url(../images/lavalamp2.gif) no-repeat 5px bottom;
+}
+#menu2 li.back .left {
+    width:170px;
+    float:none;
+    position:relative;
+    top:0;
+    left:0;
+    height:7px;
+    overflow:hidden;
+    padding:0;
+    margin:0;
+    visibility:visible;
+    background:url(../images/lavalamp2.gif) no-repeat -163px 0;
+} 
+
+/* Accordion Menu powered by www.menucool.com */
+
+/* ##### Top level items #####*/
+#acdnmenu 
+{
+    /* Note about height: 
+    Set "height:auto;" if flexible height is required. 
+    A fixed height is prefered as content below the menu won't be pulled down/up when the menu is expanding/collapsing. */
+    height: 300px;
+    width: 240px;
+    font-size:0;
+}
+
+
+#acdnmenu ul.top
+{
+	padding-left:0;
+    border:1px solid #0B4E78;
+}
+
+#acdnmenu div.heading, #acdnmenu a.link
+{
+    padding:8px; padding-left:24px;
+    text-align:left;
+    font:normal 12px Verdana;
+    color:#BBB; 
+    background:#47A url(bg.jpg) left top;
+    text-decoration:none;
+    outline:none;
+}
+
+#acdnmenu div.current, #acdnmenu div:hover, #acdnmenu a.link:hover, #acdnmenu div.current a.link
+{
+    color:#DDD;
+    font-weight:normal;
+    text-decoration:none;   
+    background:#47A url(bg.jpg) 20% top;
+}
+
+/*Top level link without children*/
+#acdnmenu a.current, #acdnmenu a.current:hover
+{
+    color:#FFF;
+    text-decoration:underline;   
+}
+
+/* arrow image for the top headings */
+#acdnmenu div.arrowImage {
+    width:12px;
+    height:12px;
+    top:9px;
+    right:4px; /* Changing it to "left:8px;" will position the arrow image to the left */
+    background-image:url(arrows.gif);
+    background-position:0 0;
+}
+
+#acdnmenu div.current div.arrowImage {
+    background-position:0 -12px;
+}
+
+#acdnmenu li.separator
+{
+    border-top:1px solid black;
+    border-bottom:1px solid #0B4E78; 
+}
+
+
+/* ##### Sub level items #####*/
+#acdnmenu ul.sub
+{
+	padding-left:14px; /*This determines the hierarchical offset*/ 
+    background:#47A url(bg.jpg) 20% -30px;/**/
+}
+#acdnmenu ul.sub ul.sub
+{
+    background:none; 
+}
+
+#acdnmenu ul.sub div.heading
+{
+    text-align:left;
+    font:normal 12px Arial;
+    padding:5px; padding-left:20px;
+    color:#BBB;
+    background:none; 
+}
+#acdnmenu ul.sub div.heading a
+{
+    color:#BBB;
+}
+
+#acdnmenu ul.sub div.current
+{
+    color:#DDD;
+    background:none; 
+}
+
+#acdnmenu ul.sub a.link
+{
+    font:normal 11px Arial;
+    color:#BBB;
+    padding:5px; padding-left:20px;
+    text-decoration:none;
+    background:none; 
+}
+
+#acdnmenu ul.sub a.link:hover, #acdnmenu ul.sub a.current, #acdnmenu ul.sub div.heading a:hover, #acdnmenu ul.sub div.heading a.current
+{
+    color:#FFF;
+    text-decoration:underline;
+    background:none; 
+}
+
+
+#acdnmenu ul.sub div.arrowImage {
+    width:12px;
+    height:12px;
+    top:6px;
+    left:4px;
+    background-image:url(arrows.gif);
+    background-position:0 -24px;
+}
+#acdnmenu ul.sub div.current div.arrowImage {
+    background-position:0 -36px;
+}
+
+
+
+/* ##### Followings usually don't need modification ###### */
+/*Hack the font-size:0 bug for IE6 */
+#acdnmenu,  #acdnmenu ul
+{
+    display:block;
+    font-size:0px;
+    line-height:0px;
+}
+#acdnmenu li {font-size:12px; line-height:16px;}
+#acdnmenu:after {content:'.';height:0;clear:both;display:block;visibility:hidden;} 
+#acdnmenu ul, #acdnmenu li, #acdnmenu div.heading, #acdnmenu a.smLink, #acdnmenu div.description {*zoom:1;}
+#acdnmenu li {*float:left;*width:100%;}
+
+#acdnmenu ul
+{
+	position:relative;/*!*/
+	overflow:hidden;
+	padding:0;margin:0;list-style-type: none;padding-left:10px;
+}
+#acdnmenu>ul{visibility: hidden;}
+#acdnmenu li {padding:0;margin:0;}
+
+#acdnmenu div.heading, #acdnmenu div.current
+{
+	position:relative;
+    cursor: pointer;
+}
+#acdnmenu div.arrowImage {position:absolute; overflow:hidden;}
+
+
+

@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           marque
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          marque
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        libellemarque: {label: "Fabricants"}
+      list:
+        title: Liste des fabriquants
+        hide: [id]
+      filter:
+        class: false
+      form:    ~
+      edit:
+        title: Edition des fabriquants
+      new:
+        title: Création des fabricants

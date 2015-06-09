@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           typeContratAvs
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          type_contrat_avs
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        typecontrat: {label: "Type de contrat"}
+      list:
+        title: Liste des types de contrat AVS
+        hide: [id]
+      filter:
+        display: [typecontrat] 
+      form:    ~
+      edit:
+        title: Edition des types de contrat
+      new:
+        title: Création des types de contrat

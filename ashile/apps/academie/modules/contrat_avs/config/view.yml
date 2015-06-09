@@ -1,0 +1,15 @@
+listposSuccess:
+  has_layout: true
+  layout:     layoutpopup
+  
+popupSuccess:
+  has_layout: true
+  layout:     layoutpopup
+ 
+messageSuccess:
+  has_layout: false
+  
+showSuccess:
+  has_layout: true
+  layout:     layoutpopup
+  

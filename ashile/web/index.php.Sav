@@ -1,0 +1,29 @@
+<?php
+/*******************************************************************************
+ * Projet : ASH -- Application destinée à la gestion des élèves Handicapés de
+ * l'ile de la Réunion, pour l'académie de la Réunion 
+ * 
+ * 04/2011 - 12/2011
+ * 
+ * Auteurs : R.GRAVANT; F.GELEZ
+ * 
+ * développé avec Symfony 1.4 et Doctrine 2
+ * 
+ * *****************************************************************************
+ */
+
+
+// je commence par déclarer "date_default_timezone" car ce n'est pas renseigné dans php.ini 
+// et cela provoque des messages d'erreurs
+	date_default_timezone_set("Indian/Reunion");
+
+	// declaration du fichier nécéssaire qui pointera vers la bibliotheque symfony  
+	require_once(dirname(__FILE__).'/../config/ProjectConfiguration.class.php');
+
+
+	$configuration = ProjectConfiguration::getApplicationConfiguration('frontend', 'prod', false);
+	sfContext::createInstance($configuration)->dispatch();
+
+
+  
+ 

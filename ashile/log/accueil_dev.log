@@ -1,0 +1,526 @@
+May 26 07:56:51 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 07:56:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 07:56:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 07:56:51 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 07:56:51 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 07:56:51 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 25 (Undefined variable: app)
+May 26 07:56:51 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 66 (Undefined variable: perm)
+May 26 07:56:51 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 90 (Undefined variable: perm)
+May 26 07:56:51 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 108 (Undefined variable: direction)
+May 26 07:56:51 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 109 (Undefined variable: retour)
+May 26 07:56:51 symfony [info] {sfPHPView} Decorate content with "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 07:56:51 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 07:56:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 26 07:56:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 07:56:51 symfony [info] {sfWebDebugLogger} Configuration 1554.55 ms (10)
+May 26 07:56:51 symfony [info] {sfWebDebugLogger} Factories 99.77 ms (1)
+May 26 07:56:51 symfony [info] {sfWebDebugLogger} Action "main/index" 0.07 ms (1)
+May 26 07:56:51 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 3.83 ms (1)
+May 26 07:56:51 symfony [info] {sfWebResponse} Send content (31545 o)
+May 26 07:56:51 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/wwwacreunion.png" (/).
+May 26 07:56:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 26 07:56:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 07:56:51 symfony [info] {sfWebDebugLogger} Configuration 0.96 ms (6)
+May 26 07:56:51 symfony [info] {sfWebDebugLogger} Factories 3.96 ms (1)
+May 26 08:20:30 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 08:20:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 08:20:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 08:20:30 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 08:20:30 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 08:20:32 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 08:20:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 08:20:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 08:20:32 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 08:20:32 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 08:20:45 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 08:20:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 08:20:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 08:20:45 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 08:20:45 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 08:20:45 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 25 (Undefined variable: app)
+May 26 08:20:45 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 66 (Undefined variable: perm)
+May 26 08:20:45 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 90 (Undefined variable: perm)
+May 26 08:20:45 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 108 (Undefined variable: direction)
+May 26 08:20:45 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 109 (Undefined variable: retour)
+May 26 08:20:45 symfony [info] {sfPHPView} Decorate content with "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 08:20:45 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 08:20:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 26 08:20:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 08:20:45 symfony [info] {sfWebDebugLogger} Configuration 0.85 ms (10)
+May 26 08:20:45 symfony [info] {sfWebDebugLogger} Factories 3.51 ms (1)
+May 26 08:20:45 symfony [info] {sfWebDebugLogger} Action "main/index" 0.06 ms (1)
+May 26 08:20:45 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 4.05 ms (1)
+May 26 08:20:45 symfony [info] {sfWebResponse} Send content (31572 o)
+May 26 08:20:45 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/wwwacreunion.png" (/).
+May 26 08:20:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 26 08:20:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 08:20:45 symfony [info] {sfWebDebugLogger} Configuration 0.50 ms (6)
+May 26 08:20:45 symfony [info] {sfWebDebugLogger} Factories 2.12 ms (1)
+May 26 08:20:59 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 08:20:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 08:20:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 08:20:59 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 08:20:59 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 08:21:49 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 08:21:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 08:21:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 08:21:49 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 08:21:49 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 08:21:50 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 08:21:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 08:21:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 08:21:50 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 08:21:50 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 08:21:50 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 08:21:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 08:21:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 08:21:50 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 08:21:50 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 08:21:53 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 08:21:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 08:21:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 08:21:53 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 08:21:53 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 08:22:01 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 08:22:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 08:22:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 08:22:01 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 08:22:01 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 08:22:09 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 08:22:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 08:22:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 08:22:09 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 08:22:09 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 08:24:17 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 08:24:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 08:24:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 08:24:17 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 08:24:17 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 08:24:20 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 08:24:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 08:24:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 08:24:20 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 08:24:20 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 08:24:21 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 08:24:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 08:24:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 08:24:21 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 08:24:21 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 08:24:35 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 08:24:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 08:24:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 08:24:35 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 08:24:35 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 08:24:35 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 25 (Undefined variable: app)
+May 26 08:24:35 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 66 (Undefined variable: perm)
+May 26 08:24:35 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 90 (Undefined variable: perm)
+May 26 08:24:35 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 108 (Undefined variable: direction)
+May 26 08:24:35 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 109 (Undefined variable: retour)
+May 26 08:24:35 symfony [info] {sfPHPView} Decorate content with "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 08:24:35 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 08:24:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 26 08:24:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 08:24:35 symfony [info] {sfWebDebugLogger} Configuration 0.87 ms (10)
+May 26 08:24:35 symfony [info] {sfWebDebugLogger} Factories 2.59 ms (1)
+May 26 08:24:35 symfony [info] {sfWebDebugLogger} Action "main/index" 0.08 ms (1)
+May 26 08:24:35 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 3.96 ms (1)
+May 26 08:24:35 symfony [info] {sfWebResponse} Send content (31572 o)
+May 26 08:24:35 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/wwwacreunion.png" (/).
+May 26 08:24:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 26 08:24:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 08:24:35 symfony [info] {sfWebDebugLogger} Configuration 0.97 ms (6)
+May 26 08:24:35 symfony [info] {sfWebDebugLogger} Factories 3.81 ms (1)
+May 26 08:26:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 08:26:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 08:26:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 08:26:39 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 08:26:39 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 08:26:40 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 08:26:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 08:26:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 08:26:40 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 08:26:40 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 08:27:02 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 08:27:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 08:27:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 08:27:02 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 08:27:02 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 08:27:02 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 25 (Undefined variable: app)
+May 26 08:27:02 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 71 (Undefined variable: texts)
+May 26 08:27:02 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 71 (Invalid argument supplied for foreach())
+May 26 08:27:02 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 90 (Undefined variable: perm)
+May 26 08:27:02 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 108 (Undefined variable: direction)
+May 26 08:27:02 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 109 (Undefined variable: retour)
+May 26 08:27:02 symfony [info] {sfPHPView} Decorate content with "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 08:27:02 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 08:27:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 26 08:27:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 08:27:02 symfony [info] {sfWebDebugLogger} Configuration 1.61 ms (10)
+May 26 08:27:02 symfony [info] {sfWebDebugLogger} Factories 5.47 ms (1)
+May 26 08:27:02 symfony [info] {sfWebDebugLogger} Action "main/index" 0.10 ms (1)
+May 26 08:27:02 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 4.54 ms (1)
+May 26 08:27:02 symfony [info] {sfWebResponse} Send content (31890 o)
+May 26 08:27:02 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/wwwacreunion.png" (/).
+May 26 08:27:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 26 08:27:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 08:27:02 symfony [info] {sfWebDebugLogger} Configuration 1.19 ms (6)
+May 26 08:27:02 symfony [info] {sfWebDebugLogger} Factories 3.73 ms (1)
+May 26 11:16:48 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 11:16:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 11:16:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 11:16:48 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 11:16:48 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 11:17:18 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 11:17:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 11:17:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 11:17:18 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 11:17:18 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 11:17:18 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 44 (Undefined index: HTTP_CTEMAIL)
+May 26 11:17:18 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 45 (Undefined variable: perm)
+May 26 11:17:18 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Undefined variable: messages)
+May 26 11:17:18 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Invalid argument supplied for foreach())
+May 26 11:17:18 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Undefined variable: texts)
+May 26 11:17:18 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Invalid argument supplied for foreach())
+May 26 11:17:18 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 89 (Undefined variable: perm)
+May 26 11:17:18 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 107 (Undefined variable: direction)
+May 26 11:17:18 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 108 (Undefined variable: retour)
+May 26 11:17:18 symfony [info] {sfPHPView} Decorate content with "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 11:17:18 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 11:17:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 26 11:17:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 11:17:18 symfony [info] {sfWebDebugLogger} Configuration 0.83 ms (10)
+May 26 11:17:18 symfony [info] {sfWebDebugLogger} Factories 3.43 ms (1)
+May 26 11:17:18 symfony [info] {sfWebDebugLogger} Action "main/index" 0.07 ms (1)
+May 26 11:17:18 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 27.27 ms (1)
+May 26 11:17:18 symfony [info] {sfWebResponse} Send content (33212 o)
+May 26 11:17:18 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/wwwacreunion.png" (/).
+May 26 11:17:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 26 11:17:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 11:17:18 symfony [info] {sfWebDebugLogger} Configuration 0.49 ms (6)
+May 26 11:17:18 symfony [info] {sfWebDebugLogger} Factories 1.99 ms (1)
+May 26 11:18:07 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 11:18:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 11:18:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 11:18:07 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 11:18:07 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 11:18:07 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 44 (Undefined index: HTTP_CTEMAIL)
+May 26 11:18:07 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 45 (Undefined variable: perm)
+May 26 11:18:07 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Undefined variable: messages)
+May 26 11:18:07 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Invalid argument supplied for foreach())
+May 26 11:18:07 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Undefined variable: texts)
+May 26 11:18:07 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Invalid argument supplied for foreach())
+May 26 11:18:07 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 89 (Undefined variable: perm)
+May 26 11:18:07 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 107 (Undefined variable: direction)
+May 26 11:18:07 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 108 (Undefined variable: retour)
+May 26 11:18:07 symfony [info] {sfPHPView} Decorate content with "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 11:18:07 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 11:18:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 26 11:18:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 11:18:07 symfony [info] {sfWebDebugLogger} Configuration 0.79 ms (10)
+May 26 11:18:07 symfony [info] {sfWebDebugLogger} Factories 2.20 ms (1)
+May 26 11:18:07 symfony [info] {sfWebDebugLogger} Action "main/index" 0.06 ms (1)
+May 26 11:18:07 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 2.65 ms (1)
+May 26 11:18:08 symfony [info] {sfWebResponse} Send content (33220 o)
+May 26 11:18:08 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/wwwacreunion.png" (/).
+May 26 11:18:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 26 11:18:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 11:18:08 symfony [info] {sfWebDebugLogger} Configuration 0.88 ms (6)
+May 26 11:18:08 symfony [info] {sfWebDebugLogger} Factories 4.57 ms (1)
+May 26 11:18:30 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 11:18:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 11:18:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 11:18:30 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 11:18:30 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 11:18:30 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 44 (Undefined index: HTTP_CTEMAIL)
+May 26 11:18:30 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 45 (Undefined variable: perm)
+May 26 11:18:30 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Undefined variable: messages)
+May 26 11:18:30 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Invalid argument supplied for foreach())
+May 26 11:18:30 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Undefined variable: texts)
+May 26 11:18:30 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Invalid argument supplied for foreach())
+May 26 11:18:30 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 89 (Undefined variable: perm)
+May 26 11:18:30 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 107 (Undefined variable: direction)
+May 26 11:18:30 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 108 (Undefined variable: retour)
+May 26 11:18:30 symfony [info] {sfPHPView} Decorate content with "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 11:18:30 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 11:18:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 26 11:18:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 11:18:30 symfony [info] {sfWebDebugLogger} Configuration 0.84 ms (10)
+May 26 11:18:30 symfony [info] {sfWebDebugLogger} Factories 3.70 ms (1)
+May 26 11:18:30 symfony [info] {sfWebDebugLogger} Action "main/index" 0.07 ms (1)
+May 26 11:18:30 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 3.67 ms (1)
+May 26 11:18:30 symfony [info] {sfWebResponse} Send content (33221 o)
+May 26 11:18:30 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/wwwacreunion.png" (/).
+May 26 11:18:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 26 11:18:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 11:18:30 symfony [info] {sfWebDebugLogger} Configuration 0.54 ms (6)
+May 26 11:18:30 symfony [info] {sfWebDebugLogger} Factories 3.01 ms (1)
+May 26 11:19:00 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 11:19:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 11:19:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 11:19:00 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 11:19:00 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 11:19:00 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 44 (Undefined index: HTTP_CTEMAIL)
+May 26 11:19:00 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 45 (Undefined variable: perm)
+May 26 11:19:00 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Undefined variable: messages)
+May 26 11:19:00 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Invalid argument supplied for foreach())
+May 26 11:19:00 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Undefined variable: texts)
+May 26 11:19:00 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Invalid argument supplied for foreach())
+May 26 11:19:00 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 89 (Undefined variable: perm)
+May 26 11:19:00 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 107 (Undefined variable: direction)
+May 26 11:19:00 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 108 (Undefined variable: retour)
+May 26 11:19:00 symfony [info] {sfPHPView} Decorate content with "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 11:19:00 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 11:19:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 26 11:19:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 11:19:00 symfony [info] {sfWebDebugLogger} Configuration 0.82 ms (10)
+May 26 11:19:00 symfony [info] {sfWebDebugLogger} Factories 2.25 ms (1)
+May 26 11:19:00 symfony [info] {sfWebDebugLogger} Action "main/index" 0.06 ms (1)
+May 26 11:19:00 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 2.74 ms (1)
+May 26 11:19:00 symfony [info] {sfWebResponse} Send content (33225 o)
+May 26 11:19:00 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/wwwacreunion.png" (/).
+May 26 11:19:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 26 11:19:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 11:19:00 symfony [info] {sfWebDebugLogger} Configuration 0.89 ms (6)
+May 26 11:19:00 symfony [info] {sfWebDebugLogger} Factories 3.42 ms (1)
+May 26 11:19:21 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 11:19:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 11:19:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 11:19:21 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 11:19:21 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 11:19:21 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 44 (Undefined index: HTTP_CTEMAIL)
+May 26 11:19:21 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 45 (Undefined variable: perm)
+May 26 11:19:21 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Undefined variable: messages)
+May 26 11:19:21 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Invalid argument supplied for foreach())
+May 26 11:19:21 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Undefined variable: texts)
+May 26 11:19:21 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Invalid argument supplied for foreach())
+May 26 11:19:21 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 89 (Undefined variable: perm)
+May 26 11:19:21 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 107 (Undefined variable: direction)
+May 26 11:19:21 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 108 (Undefined variable: retour)
+May 26 11:19:21 symfony [info] {sfPHPView} Decorate content with "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 11:19:21 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 11:19:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 26 11:19:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 11:19:21 symfony [info] {sfWebDebugLogger} Configuration 0.79 ms (10)
+May 26 11:19:21 symfony [info] {sfWebDebugLogger} Factories 2.37 ms (1)
+May 26 11:19:21 symfony [info] {sfWebDebugLogger} Action "main/index" 0.06 ms (1)
+May 26 11:19:21 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 2.09 ms (1)
+May 26 11:19:21 symfony [info] {sfWebResponse} Send content (33193 o)
+May 26 11:19:21 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/wwwacreunion.png" (/).
+May 26 11:19:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 26 11:19:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 11:19:21 symfony [info] {sfWebDebugLogger} Configuration 1.12 ms (6)
+May 26 11:19:21 symfony [info] {sfWebDebugLogger} Factories 4.12 ms (1)
+May 26 11:19:59 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 11:19:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 11:19:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 11:19:59 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 11:19:59 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 11:19:59 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 44 (Undefined index: HTTP_CTEMAIL)
+May 26 11:19:59 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 45 (Undefined variable: perm)
+May 26 11:19:59 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Undefined variable: messages)
+May 26 11:19:59 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Invalid argument supplied for foreach())
+May 26 11:19:59 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Undefined variable: texts)
+May 26 11:19:59 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Invalid argument supplied for foreach())
+May 26 11:19:59 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 89 (Undefined variable: perm)
+May 26 11:19:59 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 107 (Undefined variable: direction)
+May 26 11:19:59 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 108 (Undefined variable: retour)
+May 26 11:19:59 symfony [info] {sfPHPView} Decorate content with "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 11:19:59 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 11:19:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 26 11:19:59 symfony [info] {sfWebResponse} Send header ": text/html"
+May 26 11:19:59 symfony [info] {sfWebDebugLogger} Configuration 0.81 ms (10)
+May 26 11:19:59 symfony [info] {sfWebDebugLogger} Factories 4.41 ms (1)
+May 26 11:19:59 symfony [info] {sfWebDebugLogger} Action "main/index" 0.06 ms (1)
+May 26 11:19:59 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 1.95 ms (1)
+May 26 11:19:59 symfony [info] {sfWebResponse} Send content (33117 o)
+May 26 11:19:59 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/wwwacreunion.png" (/).
+May 26 11:19:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 26 11:19:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 11:19:59 symfony [info] {sfWebDebugLogger} Configuration 0.55 ms (6)
+May 26 11:19:59 symfony [info] {sfWebDebugLogger} Factories 2.71 ms (1)
+May 26 11:20:12 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 11:20:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 11:20:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 11:20:12 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 11:20:12 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 11:20:12 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 44 (Undefined index: HTTP_CTEMAIL)
+May 26 11:20:12 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 45 (Undefined variable: perm)
+May 26 11:20:12 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Undefined variable: messages)
+May 26 11:20:12 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Invalid argument supplied for foreach())
+May 26 11:20:12 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Undefined variable: texts)
+May 26 11:20:12 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Invalid argument supplied for foreach())
+May 26 11:20:12 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 89 (Undefined variable: perm)
+May 26 11:20:12 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 107 (Undefined variable: direction)
+May 26 11:20:12 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 108 (Undefined variable: retour)
+May 26 11:20:12 symfony [info] {sfPHPView} Decorate content with "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 11:20:12 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 11:20:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 26 11:20:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 11:20:12 symfony [info] {sfWebDebugLogger} Configuration 0.83 ms (10)
+May 26 11:20:12 symfony [info] {sfWebDebugLogger} Factories 4.24 ms (1)
+May 26 11:20:12 symfony [info] {sfWebDebugLogger} Action "main/index" 0.07 ms (1)
+May 26 11:20:12 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 2.04 ms (1)
+May 26 11:20:12 symfony [info] {sfWebResponse} Send content (33225 o)
+May 26 11:20:12 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/wwwacreunion.png" (/).
+May 26 11:20:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 26 11:20:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 11:20:12 symfony [info] {sfWebDebugLogger} Configuration 0.90 ms (6)
+May 26 11:20:12 symfony [info] {sfWebDebugLogger} Factories 2.99 ms (1)
+May 26 11:21:11 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 11:21:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 11:21:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 11:21:11 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 11:21:11 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 11:21:11 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 44 (Undefined index: HTTP_CTEMAIL)
+May 26 11:21:11 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 45 (Undefined variable: perm)
+May 26 11:21:11 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Undefined variable: messages)
+May 26 11:21:11 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Invalid argument supplied for foreach())
+May 26 11:21:11 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Undefined variable: texts)
+May 26 11:21:11 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Invalid argument supplied for foreach())
+May 26 11:21:11 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 89 (Undefined variable: perm)
+May 26 11:21:11 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 107 (Undefined variable: direction)
+May 26 11:21:11 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 108 (Undefined variable: retour)
+May 26 11:21:11 symfony [info] {sfPHPView} Decorate content with "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 11:21:11 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 11:21:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 26 11:21:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 11:21:11 symfony [info] {sfWebDebugLogger} Configuration 0.80 ms (10)
+May 26 11:21:11 symfony [info] {sfWebDebugLogger} Factories 2.36 ms (1)
+May 26 11:21:11 symfony [info] {sfWebDebugLogger} Action "main/index" 0.06 ms (1)
+May 26 11:21:11 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 2.91 ms (1)
+May 26 11:21:11 symfony [info] {sfWebResponse} Send content (33222 o)
+May 26 11:21:11 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/wwwacreunion.png" (/).
+May 26 11:21:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 26 11:21:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 11:21:11 symfony [info] {sfWebDebugLogger} Configuration 0.48 ms (6)
+May 26 11:21:11 symfony [info] {sfWebDebugLogger} Factories 1.95 ms (1)
+May 26 11:21:56 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 11:21:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 11:21:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 11:21:56 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 11:21:56 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 11:21:56 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 44 (Undefined index: HTTP_CTEMAIL)
+May 26 11:21:56 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 45 (Undefined variable: perm)
+May 26 11:21:56 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Undefined variable: messages)
+May 26 11:21:56 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Invalid argument supplied for foreach())
+May 26 11:21:56 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Undefined variable: texts)
+May 26 11:21:56 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Invalid argument supplied for foreach())
+May 26 11:21:56 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 89 (Undefined variable: perm)
+May 26 11:21:56 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 107 (Undefined variable: direction)
+May 26 11:21:56 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 108 (Undefined variable: retour)
+May 26 11:21:56 symfony [info] {sfPHPView} Decorate content with "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 11:21:56 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 11:21:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 26 11:21:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 11:21:56 symfony [info] {sfWebDebugLogger} Configuration 0.79 ms (10)
+May 26 11:21:56 symfony [info] {sfWebDebugLogger} Factories 2.27 ms (1)
+May 26 11:21:56 symfony [info] {sfWebDebugLogger} Action "main/index" 0.06 ms (1)
+May 26 11:21:56 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 2.63 ms (1)
+May 26 11:21:56 symfony [info] {sfWebResponse} Send content (33229 o)
+May 26 11:21:56 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/wwwacreunion.png" (/).
+May 26 11:21:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 26 11:21:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 11:21:56 symfony [info] {sfWebDebugLogger} Configuration 0.49 ms (6)
+May 26 11:21:56 symfony [info] {sfWebDebugLogger} Factories 2.08 ms (1)
+May 26 11:22:28 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 11:22:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 11:22:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 11:22:28 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 11:22:28 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 11:22:28 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 44 (Undefined index: HTTP_CTEMAIL)
+May 26 11:22:28 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 45 (Undefined variable: perm)
+May 26 11:22:28 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Undefined variable: messages)
+May 26 11:22:28 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Invalid argument supplied for foreach())
+May 26 11:22:28 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Undefined variable: texts)
+May 26 11:22:28 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Invalid argument supplied for foreach())
+May 26 11:22:28 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 89 (Undefined variable: perm)
+May 26 11:22:28 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 107 (Undefined variable: direction)
+May 26 11:22:28 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 108 (Undefined variable: retour)
+May 26 11:22:28 symfony [info] {sfPHPView} Decorate content with "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 11:22:28 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 11:22:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 26 11:22:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 11:22:28 symfony [info] {sfWebDebugLogger} Configuration 0.79 ms (10)
+May 26 11:22:28 symfony [info] {sfWebDebugLogger} Factories 2.28 ms (1)
+May 26 11:22:28 symfony [info] {sfWebDebugLogger} Action "main/index" 0.06 ms (1)
+May 26 11:22:28 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 2.49 ms (1)
+May 26 11:22:28 symfony [info] {sfWebResponse} Send content (33225 o)
+May 26 11:22:29 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/wwwacreunion.png" (/).
+May 26 11:22:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 26 11:22:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 11:22:29 symfony [info] {sfWebDebugLogger} Configuration 0.48 ms (6)
+May 26 11:22:29 symfony [info] {sfWebDebugLogger} Factories 1.88 ms (1)
+May 26 11:45:29 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 26 11:45:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 11:45:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 11:45:29 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 26 11:45:29 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 26 11:45:29 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 44 (Undefined index: HTTP_CTEMAIL)
+May 26 11:45:29 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 45 (Undefined variable: perm)
+May 26 11:45:29 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Undefined variable: messages)
+May 26 11:45:29 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Invalid argument supplied for foreach())
+May 26 11:45:29 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Undefined variable: texts)
+May 26 11:45:29 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Invalid argument supplied for foreach())
+May 26 11:45:29 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 89 (Undefined variable: perm)
+May 26 11:45:29 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 107 (Undefined variable: direction)
+May 26 11:45:29 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 108 (Undefined variable: retour)
+May 26 11:45:29 symfony [info] {sfPHPView} Decorate content with "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 11:45:29 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 26 11:45:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 26 11:45:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 11:45:29 symfony [info] {sfWebDebugLogger} Configuration 0.81 ms (10)
+May 26 11:45:29 symfony [info] {sfWebDebugLogger} Factories 2.40 ms (1)
+May 26 11:45:29 symfony [info] {sfWebDebugLogger} Action "main/index" 0.06 ms (1)
+May 26 11:45:29 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 2.52 ms (1)
+May 26 11:45:29 symfony [info] {sfWebResponse} Send content (33224 o)
+May 26 11:45:29 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/wwwacreunion.png" (/).
+May 26 11:45:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 26 11:45:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 11:45:29 symfony [info] {sfWebDebugLogger} Configuration 0.58 ms (6)
+May 26 11:45:29 symfony [info] {sfWebDebugLogger} Factories 1.98 ms (1)
+May 29 13:31:10 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 29 13:31:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 13:31:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 13:31:10 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 29 13:31:10 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/symfony-1.4.13/lib/response/sfWebResponse.class.php on line 412 (preg_replace_callback(): Requires argument 2, ''-'.strtoupper('\1')', to be a valid callback)
+May 29 13:31:10 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/symfony-1.4.13/lib/response/sfWebResponse.class.php on line 412 (preg_replace_callback(): Requires argument 2, ''-'.strtoupper('\1')', to be a valid callback)
+May 29 13:31:10 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php"
+May 29 13:31:10 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 44 (Undefined index: HTTP_CTEMAIL)
+May 29 13:31:10 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 45 (Undefined variable: perm)
+May 29 13:31:10 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Undefined variable: messages)
+May 29 13:31:10 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 52 (Invalid argument supplied for foreach())
+May 29 13:31:10 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Undefined variable: texts)
+May 29 13:31:10 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 70 (Invalid argument supplied for foreach())
+May 29 13:31:10 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 89 (Undefined variable: perm)
+May 29 13:31:10 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 107 (Undefined variable: direction)
+May 29 13:31:10 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/html/data/appli/ashile/apps/accueil/modules/main/templates/indexSuccess.php on line 108 (Undefined variable: retour)
+May 29 13:31:10 symfony [info] {sfPHPView} Decorate content with "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 29 13:31:10 symfony [info] {sfPHPView} Render "/var/www/html/data/appli/ashile/apps/accueil/templates/layout.php"
+May 29 13:31:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 29 13:31:10 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/symfony-1.4.13/lib/response/sfWebResponse.class.php on line 412 (preg_replace_callback(): Requires argument 2, ''-'.strtoupper('\1')', to be a valid callback)
+May 29 13:31:10 symfony [info] {sfWebResponse} Send header "Content-type: text/html"
+May 29 13:31:10 symfony [info] {sfWebDebugLogger} Configuration 427.91 ms (10)
+May 29 13:31:10 symfony [info] {sfWebDebugLogger} Factories 24.86 ms (1)
+May 29 13:31:10 symfony [info] {sfWebDebugLogger} Action "main/index" 0.06 ms (1)
+May 29 13:31:10 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 3.42 ms (1)
+May 29 13:31:10 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/symfony-1.4.13/lib/response/sfWebResponse.class.php on line 412 (preg_replace_callback(): Requires argument 2, ''-'.strtoupper('\1')', to be a valid callback)
+May 29 13:31:10 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/symfony-1.4.13/lib/util/sfToolkit.class.php on line 362 (preg_replace_callback(): Requires argument 2, 'Array', to be a valid callback)
+May 29 13:31:10 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/symfony-1.4.13/lib/util/sfToolkit.class.php on line 362 (preg_replace_callback(): Requires argument 2, 'Array', to be a valid callback)
+May 29 13:31:10 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/symfony-1.4.13/lib/util/sfToolkit.class.php on line 362 (preg_replace_callback(): Requires argument 2, 'Array', to be a valid callback)
+May 29 13:31:10 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/symfony-1.4.13/lib/util/sfToolkit.class.php on line 362 (preg_replace_callback(): Requires argument 2, 'Array', to be a valid callback)
+May 29 13:31:10 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/symfony-1.4.13/lib/util/sfToolkit.class.php on line 362 (preg_replace_callback(): Requires argument 2, 'Array', to be a valid callback)
+May 29 13:31:10 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/symfony-1.4.13/lib/util/sfToolkit.class.php on line 362 (preg_replace_callback(): Requires argument 2, 'Array', to be a valid callback)
+May 29 13:31:10 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/symfony-1.4.13/lib/util/sfToolkit.class.php on line 362 (preg_replace_callback(): Requires argument 2, 'Array', to be a valid callback)
+May 29 13:31:10 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/symfony-1.4.13/lib/util/sfToolkit.class.php on line 362 (preg_replace_callback(): Requires argument 2, 'Array', to be a valid callback)
+May 29 13:31:10 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/symfony-1.4.13/lib/util/sfToolkit.class.php on line 362 (preg_replace_callback(): Requires argument 2, 'Array', to be a valid callback)
+May 29 13:31:10 symfony [info] {sfWebResponse} Send content (32941 o)
+May 29 13:31:11 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/wwwacreunion.png" (/).
+May 29 13:31:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 13:31:11 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/symfony-1.4.13/lib/response/sfWebResponse.class.php on line 412 (preg_replace_callback(): Requires argument 2, ''-'.strtoupper('\1')', to be a valid callback)
+May 29 13:31:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 13:31:11 symfony [info] {sfWebDebugLogger} Configuration 0.59 ms (6)
+May 29 13:31:11 symfony [info] {sfWebDebugLogger} Factories 2.99 ms (1)
+May 29 13:31:11 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/symfony-1.4.13/lib/response/sfWebResponse.class.php on line 412 (preg_replace_callback(): Requires argument 2, ''-'.strtoupper('\1')', to be a valid callback)
+May 29 13:31:11 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/symfony-1.4.13/lib/util/sfToolkit.class.php on line 362 (preg_replace_callback(): Requires argument 2, 'Array', to be a valid callback)
+May 29 13:31:11 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/symfony-1.4.13/lib/util/sfToolkit.class.php on line 362 (preg_replace_callback(): Requires argument 2, 'Array', to be a valid callback)
+May 29 13:31:11 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/html/data/appli/ashile/symfony-1.4.13/lib/util/sfToolkit.class.php on line 362 (preg_replace_callback(): Requires argument 2, 'Array', to be a valid callback)

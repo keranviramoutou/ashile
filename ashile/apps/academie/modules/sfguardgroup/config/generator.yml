@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           sfguardgroup
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          sfguardgroup
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        created_at: {label: "Crée le ", date_format: "dd-MM-yyyy"}
+        updated_at: {label: "Mise à jour le ", date_format: "dd-MM-yyyy"}
+        name: {label: "Nom"}
+      list:
+        title: Liste des groupe utilisateurs
+      filter:
+        class: false
+      form:    ~
+      edit:
+        title: Edition des groupes utilisateur
+      new:
+        title: Création des groupes utilisateur

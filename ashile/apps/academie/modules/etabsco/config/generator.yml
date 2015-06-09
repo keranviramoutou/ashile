@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           etabsco
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          etabsco
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        typeetablissement: {label: "Type"}
+        nometabsco: {label: "Etablissement"}
+      list:
+        title: <h2>Etablissement scolaire</h2><br>ils sont utilisés pour définir la scolarité de l'élève
+        display: [rne, typeetablissement, nometabsco, quartier]
+      filter:
+        display: [rne,typeetablissement_id, circonscription_id,quartier_id]
+      form:    ~
+      edit:
+        title: <h2>Edition d'un établissement</h2><br> le champs <b>Ulis/Clis</b> permet de préciser si l'établissement à une classe ULIS ou CLIS<br><br>
+      new:
+        title: Création d'un établissement

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.8.0" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>isicsBreadcrumbsPlugin</name>
+ <channel>pear.symfony-project.com</channel>
+ <summary>A simple way to handle breadcrumbs.</summary>
+ <description>The isicsBreadcrumbsPlugin is a simple way to handle breadcrumbs in your applications.</description>
+ <lead>
+  <name>ISICS.fr</name>
+  <user>nicolas.charlot</user>
+  <email>contact@isics.fr</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-06-23</date>
+ <time>16:48:12</time>
+ <version>
+  <release>0.9.9</release>
+  <api>0.9.9</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+ <notes>
+-
+ </notes>
+ <contents>
+  <dir name="/">
+   <file md5sum="5e53c34aa028794831d089abd7ca2726" name="config/isicsBreadcrumbsPluginConfiguration.class.php" role="data"/>
+   <file md5sum="15ac243032a17c7313f468e235fa13dd" name="lib/isicsBreadcrumbs.class.php" role="data"/>
+   <file md5sum="33c5040bf479c3cc8cb7780a434e1dbd" name="modules/isicsBreadcrumbs/actions/components.class.php" role="data"/>
+   <file md5sum="bcd4e92c776f2c95178bb91fd5dfdcb2" name="modules/isicsBreadcrumbs/config/cache.yml" role="data"/>
+   <file md5sum="201a7f3f80ab6d20c1f12e153a332b78" name="modules/isicsBreadcrumbs/lib/BaseisicsBreadcrumbsComponents.class.php" role="data"/>
+   <file md5sum="d34ecab2a01f228264c52c3ec22e34b9" name="modules/isicsBreadcrumbs/templates/_show.php" role="data"/>
+   <file md5sum="ebbb7aa828d219549d166c90839925ef" name="LICENSE" role="data"/>
+   <file md5sum="cd7321567f9951f68ab6c7096f7f2cae" name="README" role="data"/>
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+   
+  </required>
+ </dependencies>
+ <phprelease/>
+ <changelog>
+  <release>
+   <version>
+    <release>0.9.9</release>
+    <api>0.9.9</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-06-23</date>
+   <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+   <notes>
+Added support for escaping strategy
+Added options for root item in component
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.9.8</release>
+    <api>0.9.8</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-06-23</date>
+   <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+   <notes>
+Added missing comments
+Updated API
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.9.7</release>
+    <api>0.9.7</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-06-23</date>
+   <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+   <notes>
+Added plugin configuration class
+Added options to breadcrumbs items
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.9.6</release>
+    <api>0.9.6</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-05-25</date>
+   <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+   <notes>
+Fixed README (thanks to Ben Lumley)
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.9.5</release>
+    <api>0.9.5</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-05-19</date>
+   <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+   <notes>
+Fixed package.xml
+Updated README to markdown
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.9.2</release>
+    <api>0.9.2</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-02-02</date>
+   <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+   <notes>
+Added breadcrumbs template shorcut (break compatibility with sf 1.0).
+Added output escaping support.
+Removed I18N support (hasn't to be handled here).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.9.1</release>
+    <api>0.9.1</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2008-07-29</date>
+   <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+   <notes>
+Added action caching support.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.9.0</release>
+    <api>0.9.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2008-06-23</date>
+   <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+   <notes>
+Initial public release.
+   </notes>
+  </release>
+ </changelog>
+</package>

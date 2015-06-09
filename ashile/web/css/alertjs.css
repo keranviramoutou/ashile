@@ -1,0 +1,111 @@
+/* STYLING THE BOX */
+/* SMALL RESET */
+.boxjs *{
+margin: 0;
+padding: 0;
+}
+/* BOX STYLE */
+.boxjs{
+color:#333;
+font-size:0.85em;
+font-family:verdana;
+background:#eee;
+border:1px solid #fff;
+width:300px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+-webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+}
+/* BOX TITLE STYLE */
+.boxjs h1{
+text-transform:uppercase;
+padding:10px;
+border-bottom: 1px solid #ddd;
+font-size:1em;
+position:relative;
+}
+/* BOX TITLE CLOSE ICON */
+.boxjs h1 span{
+cursor:pointer;
+top:8px;
+right:10px;
+position:absolute;
+}
+/* BOX TEXT STYLE */
+.boxjs p{
+border-top:1px solid #fefefe;
+padding:15px;
+}
+/* BOX BUTTON STYLE */
+.boxjs button{
+width:100px;
+margin-top:20px;
+margin:5px auto 15px auto;
+display:block;
+background-color: #EF6647;
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #EF6647), color-stop(100%, #E14D2C));
+background-image: -webkit-linear-gradient(top, #EF6647, #E14D2C);
+background-image: -moz-linear-gradient(top, #EF6647, #E14D2C);
+background-image: -ms-linear-gradient(top, #EF6647, #E14D2C);
+background-image: -o-linear-gradient(top, #EF6647, #E14D2C);
+background-image: linear-gradient(top, #EF6647, #E14D2C);
+border: 1px solid #E14D2C;
+border-bottom: 1px solid #d04121;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+color: #fff;
+padding: 8px 0;
+text-align: center;
+text-shadow: 0 1px 0 #b73b20;
+padding:5px 10px;
+-webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+text-transform: uppercase;
+cursor:pointer;
+}
+.boxjs button:hover{
+}
+/* CSS TO APPLY WHEN BOX IS OPEN AND USER CLICK OUTSIDE IT */
+/* ANIMATION */
+@-webkit-keyframes vibrate{
+from {
+-webkit-transform: rotate(-2deg);
+}
+to{
+-webkit-transform: rotate(2deg);
+}
+}
+@-moz-keyframes vibrate{
+from {
+-moz-transform: rotate(-2deg);
+}
+to{
+-moz-transform: rotate(2deg);
+}
+}
+@-o-keyframes vibrate{
+from {
+-o-transform: rotate(-2deg);
+}
+to{
+-o-transform: rotate(2deg);
+}
+}
+@keyframes vibrate{
+from {
+transform: rotate(-2deg);
+}
+to{
+transform: rotate(2deg);
+}
+}
+/* BOX IMPORTANT STYLE */
+.boxjs_important{
+-webkit-animation: vibrate 100ms;
+-moz-animation: vibrate 100ms;
+-o-animation: vibrate 100ms;
+animation: vibrate 100ms;
+}

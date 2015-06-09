@@ -1,0 +1,30 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           niveauscolaire
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          niveauscolaire
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        degreetabsco: {label: "Type établissement"}
+        nomniveauscolaire: {label: "Libellé"}
+       
+      list:
+        title: <h2>Niveau scolaires</h2>ils sont utilisés pour définir la scolarisation ordinaire des élèves
+        display: [degreetabsco,nomniveauscolaire,ordre] 
+        sort: [ordre, asc]
+      filter:
+          display: [degreetabsco,nomniveauscolaire]
+      form:    ~
+      edit:
+        title: <h2>Edition d'un niveau scolaire </h2>- le champs <b>ordre</b> permet de trier les niveaux scolaires dans les listes déroulantes (ordre par type d'établissement)<br>- le niveau scolaire est défini en fonction du <b>type d'établissement</b> (CLG ,LP etc )
+      new:
+        title: Création d'un niveau scolaire

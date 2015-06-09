@@ -1,0 +1,23 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           naturebilan
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          naturebilan
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: 
+           libellenaturebilan: {label: "Libellé"}
+      list:    
+         title: <h2>Nature des pièces complèmentaires (bilan)</h2><br>cette nomenclature est utilisée pour caractériser les pièces complémentaires du dossier ASH.<br><br>
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

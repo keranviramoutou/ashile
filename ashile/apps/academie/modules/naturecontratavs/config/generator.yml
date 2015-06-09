@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Naturecontratavs
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          naturecontratavs
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        naturecontrat: {label: "Libellé court "}
+        nouvnomnaturecontrat: {label: "Libéllé long "}
+      list:
+        title: <h2>Nature de la demande d'acccompagnement</h2> </b>(cette information est utilisée pour caractériser la demande d'accompagnement)<br>
+        hide: [id]
+      filter:
+        class: false
+      form:    ~
+      edit:
+        title: Edition des types de demande d'acc.
+      new:
+        title: Création des types de demande d'acc.

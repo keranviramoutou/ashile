@@ -1,0 +1,6 @@
+
+traitementcdaSuccess:
+  has_layout: true
+aideSuccess:
+  has_layout: false
+  

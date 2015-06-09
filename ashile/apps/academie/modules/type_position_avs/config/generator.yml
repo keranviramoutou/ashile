@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           typePositionAvs
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          type_position_avs
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        libelletypepositionavs: {label: "Libellé"}
+      list:
+        title: <h2>Type de position d'un contrat</h2> </b>(cette information est utilisée pour définir les positions d'un contrat d'un accompagnant)
+        hide: 
+      filter:
+        class: false
+      form:    ~
+      edit:
+        title: Edition des types de position AVS
+      new:
+        title: Création des types de position AVS

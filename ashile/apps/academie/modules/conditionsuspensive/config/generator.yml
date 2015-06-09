@@ -1,0 +1,23 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           conditionsuspensive
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          conditionsuspensive
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+          title: <h2>Condition suspensive</h2> </b>(cette information est utilisée pour caractérisée une demande d'accompagnement,<br>elle permet de savoir si la demande d'accompagnement est subordonnée à la condition suspensive)
+      filter:  
+         class: false
+      form:    ~
+      edit:    ~
+      new:     ~

@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Commune
+    theme:                 admin
+    non_verbose_templates: false
+    with_show:             true
+    singular:              ~
+    plural:                ~
+    route_prefix:          commune
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+   
+
+    config:
+      actions: ~
+      fields:
+        nom_commune: {label: "Communes"}
+      list:
+        title: <h2>Liste des communes</h2><br> ces communes sont utilisés pour la table des codes postaux
+        display: [nom_commune]
+      filter:
+        class: false
+      form:    ~
+      edit:
+        title: Edition d'une commune
+      new:
+        title: Création d'une commune
+

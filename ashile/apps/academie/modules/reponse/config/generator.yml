@@ -1,0 +1,23 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           reponse
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          reponse
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+           num_reponse: {label: "codage réponse"}
+      list:    
+           display: [Question]	
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

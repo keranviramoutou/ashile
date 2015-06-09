@@ -1,0 +1,30 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           sessad
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          sessad
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        etabnonsco_id: {label: "Etablissement spécialisé"}
+        typesessad_id: {label: "Type de Sessad"}
+      list:
+        title: <h2>Sessads</h2><br>Liste des établissements Sessad avec le type de prise en charge(sessad dispensé)<br>Pour créer un Sessad il faut au préalable créer un établissement spécialisé,	ne pas indiquer  "Sessad" dans le libéllé de l'établissement spécialisé créé. 
+        display: [etabnonsco, typesessad,ordre]
+        sort: [ordre, asc]
+      filter: 
+        display: [etabnonsco_id,typesessad_id,ordre]
+      form:    ~
+      edit:
+        title: Edition d'un établissement Sessad
+        display: [etabnonsco_id, typesessad_id,ordre]
+      new:
+        title: Création d'un établissement Sessad

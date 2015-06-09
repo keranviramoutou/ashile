@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"  charset="UTF-8" >
+    <head>
+        <?php include_http_metas() ?>
+        <?php include_metas() ?>
+        <?php include_title() ?>
+        <?php include_stylesheets() ?>
+        <?php include_javascripts() ?>
+        <link rel="shortcut icon" href="../../../images/favicon.ico" />
+        <script type="text/javascript">
+            var $j = jQuery.noConflict();
+            function reglerHauteur(){
+                var globalHeight = parseInt($j("#logo_ash").css("height")) + parseInt($j("#content").css("height")) + 10;
+                if (globalHeight < 900){
+                    globalHeight = 900;
+                }
+                $j("#global").css("height", globalHeight + "px");
+            };
+            $j(reglerHauteur);
+            $j(function() {
+                $j("#content").tabs();
+            });
+        </script>
+    </head>
+    <body>
+        <div id="global">
+		     <div id="colonne_nav">
+                <div id="www"></div>
+            <!--    <div id="logo" onclick="location.href='http://www.ac-reunion.fr'"></div> -->
+				   <div id="logo" ></div>
+                <div id="menu">
+                    <?php include_component('menu', 'index'); ?>
+                    
+                    <div id="mail" onClick="location.href='mailto:franck.gelez@ac-reunion.fr'"></div>
+				
+                </div>
+           </div>
+           
+           <!-- modif fg <div id="header">
+                <div id="logo_ash"></div>
+            </div> --> 
+			<!-- récupération de l'année scolaire en cours-->
+			<?php	$annee = Doctrine_Core::getTable('Anneescolaire')->getAnneeScolaireEnCours();
+				//$deb = $annee->getDatedebutanneescolaire();
+				//$fin = $annee->getDatefinanneescolaire(); ?>
+				
+            <div id="content">
+				 <!-- test pour afficher si sur application en production ou en développement -->
+	             <!-- affichage de l'année scolaire en cours --> 
+			    <?php if ($_SERVER['HTTP_HOST'] == 'ashile2.ac-reunion.fr'): ?>
+					<?php	$message ='<u><b><FONT COLOR="red" >Application de test</FONT></u></b>' ?>
+				 <?php else: ?>
+					<?php	$message ='<u><b><FONT COLOR="blue" >Application en production</FONT></u></b>' ?>
+				 <?php endif ?>
+
+				<!-------------------  BOUTON DECONNECTION ET RETOUR PORTAIL ---------------------------------->
+				<?php if($_SERVER["HTTP_X_FORWARDED_HOST"] == 'accueil.in.ac-reunion.fr' ){ 
+				$retour='https://accueil.in.ac-reunion.fr';
+				} ?>
+
+
+				<?php if($_SERVER["HTTP_X_FORWARDED_HOST"] == 'portail.ac-reunion.fr' ){ 
+				$retour='https://portail.ac-reunion.fr';
+				} ?>
+
+				<!----------------------------------------------------------------------------------------------->			
+				<table COLS=3 width=95%>
+				 <tr>
+				 	<?php echo $message; ?>
+				 </td>
+				 <tr>
+				 <tr>
+				 <td width=50%>
+				 <?php echo 'Année scolaire en cours :&nbsp<b>'.substr($deb,0,4).'&nbsp;-&nbsp'.substr($fin,0,4).'</b></FONT></h4>'; ?>
+				 </td>
+				 <td width=30% align=right>
+				 <input style="cursor: pointer;padding:2.75px; float: right; " name="deconnexion" type="button" class="bouton" id="deconnexion" value="d&eacute;connexion" onclick="location.href='/login/ct_logout.jsp'" />
+				</td>
+				<td width=14%>
+				<input style="cursor: pointer;padding:2.75px; float: right" type="button" value="Retour au Portail"  OnClick="location.href= '<?php echo $retour; ?>'" >
+				 </td>
+				 </tr>
+				 </table>
+				 
+
+                <?php if ($sf_user->hasFlash('notice')): ?>
+                    <div class="flash_notice"><?php echo $sf_user->getFlash('notice') ?></div>
+                <?php endif ?>
+
+                <?php if ($sf_user->hasFlash('error')): ?>
+                    <div class="flash_error"><?php echo $sf_user->getFlash('error') ?></div>
+                <?php endif ?>
+                <?php $etab = sfContext::getInstance()->getUser()->getAttribute('etab') ?>
+                <?php if (!$etab) sfContext::getInstance()->getUser()->setAttribute('etab', 'sans') // Si le choix d'affichage pour les eleves n'est pas defini, on met à homepage sans (sans etab) ?>
+                <?php echo $sf_content ?>
+			
+			
+            </div>
+			
+        </div>
+		
+    </body>
+</html>

@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Secteur
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          secteur_secteurs
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: 
+        libellesecteur: {label: "Secteur"}
+        sfguarduser: {label: "Eneseignant <br>référent"}
+        sort: [libellesecteur,asc]
+      list:   
+        title: <h2>secteur des enseignants référents</h2>chaque enseignant à la charge d'un secteur ,<br>chaque établissement scolaire est attaché à un secteur
+        display: [sfguarduser,libellesecteur]
+
+      filter:
+        display: [sfguarduser_id,libellesecteur]
+      form:    ~
+      edit:    ~
+      new:     ~

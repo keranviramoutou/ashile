@@ -1,0 +1,26 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           typeresponsableeleve
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          typeresponsableeleve
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: ~
+      list:
+        title: Liste des types de responsable élève
+        display: [denomination]
+      filter:
+        class: false
+      form:    ~
+      edit:
+        title: Edition d'un type de responsable
+      new:
+        title: Création d'un type de responsable

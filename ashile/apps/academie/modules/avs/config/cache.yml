@@ -1,0 +1,15 @@
+index:
+  enabled:     false
+
+new:
+  enabled:     false
+
+edit:
+  enabled:     false
+
+_form:
+  enabled:     false
+
+
+all:
+ lifetime: 600
